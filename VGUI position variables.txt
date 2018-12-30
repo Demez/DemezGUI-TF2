@@ -1,0 +1,12 @@
+VGUI position variables
+==========================
+c - center screen at origin
+
+s - move stuff with small values?
+
+f - full?
+"tall"			"f0"
+
+"tall"			"o0.628"
+
+"wide"			"o1.6"

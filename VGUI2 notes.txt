@@ -1,0 +1,11 @@
+==========================
+VGUI2 useful pages
+==========================
+https://developer.valvesoftware.com/wiki/VGUI_Position_and_Size_Flags
+
+==========================
+VGUI2 useful commands
+==========================
+vgui_drawtree 1
+hud_reloadscheme (only reloads ingame, why valve)
+showschemevisualizer
