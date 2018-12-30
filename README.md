@@ -8,7 +8,7 @@ Current Stuff Done:
  - Modifed DemoUI
  
 Planned Stuff:
- - Main Menu Overhall (still working on design before i make it)
+ - Main Menu Changes (still working on design before i make it)
  - Simple HUD that doesnt take too much of the screen, looks nice, and gives all the info you need easily (barely started)
  - other more specific crap idk
  
