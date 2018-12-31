@@ -1,40 +1,48 @@
 "Resource/UI/MainMenuOverride.res"
 {
-	//"MenuBar_TempReference"
-	//{
-	//	"ControlName"			"ScalableImagePanel"
-	//	"fieldName"			"MenuBar_TempReference"
-	//	"xpos"				"0"
-	//	"ypos"				"0"
-	//	"zpos"				"-5"
-	//	"wide"				"o0.125" // on 1080 tall, its 60
-	//	"tall"				"f"
-	//	"visible"			"1"
-	//	"enabled"			"1"
-	//	"image"				"demez\menu\menubar"
-	//	"scaleImage"			"1"
-	//	"proportionaltoparent"	"1"
-	//}
+	// new ones with size of 48, not scaled yet
+	// 24
+	// 72
+	// 120
+	// 168
+	// 216
+	// 264
+	// 312
+	// 360
+	// 408
+	// 456
 	
-	// all ypos values for aligning to menubar, gap of 60
-	// 	c-210
-	// 	c-150
-	// 	c-90
-	// 	c-30
-	// 	c+30
-	// 	c+90
-	// c+150
-	// 	c+210
+	// spacing
+	// maybe make this the background and not have buttons draw their own background?
+	"MenuBar_Background_Light"
+	{
+		"ControlName"				"EditablePanel"
+		"fieldName"				"MenuBar_Background_Light"
+		"xpos"					"0"
+		"ypos"					"24"
+		"zpos"					"-1"
+		"wide"					"48"
+		"tall"					"f96" //"f48"
+		"visible"				"1"
+		"paintbackground"			"1"
+		"bgcolor_override"		"128 128 128 64"
+		"proportionaltoparent"		"1"
+	}
 	
-	// new ones with size of 64
-	// c-210
-	// c-150
-	// c-90
-	// c-30
-	// c+30
-	// c+90
-	// c+150
-	// c+210
+	"MenuBar_Background_Dark"
+	{
+		"ControlName"				"EditablePanel"
+		"fieldName"				"MenuBar_Background_Dark"
+		"xpos"					"0"
+		"ypos"					"r72" //"r24"
+		"zpos"					"-1"
+		"wide"					"48"
+		"tall"					"72" //"24"
+		"visible"				"1"
+		"paintbackground"			"1"
+		"bgcolor_override"		"64 64 64 64"
+		"proportionaltoparent"		"1"
+	}
 	
 	// eventually replace these with buttons that use a font instead of an image, since fonts are scaleable (vectors)
 	"MenuBar_CharacterSetupButton"
@@ -42,9 +50,9 @@
 		"ControlName"				"CExImageButton"
 		"fieldName"				"MenuBar_CharacterSetupButton"
 		"xpos"					"0"
-		"ypos"					"c-210" // 240 - 30
+		"ypos"					"24" //"c-210" // 240 - 30
 		"wide"					"o1.0"
-		"tall"					"60"
+		"tall"					"48"
 		"autoResize"				"0"
 		"pinCorner"				"0"
 		"visible"				"1"
@@ -67,8 +75,8 @@
 		
 		"RoundedCorners"			"0"
 				
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -81,7 +89,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
@@ -95,10 +103,10 @@
 		"ControlName"			"CExImageButton"
 		"fieldName"			"MenuBar_SettingsButton"
 		"xpos"				"0"
-		"ypos"				"c-150" // is just 180 - 32 (height of mmdashboard)
+		"ypos"				"72" //"c-150" // is just 180 - 32 (height of mmdashboard)
 		"zpos"				"1"
 		"wide"				"o1.0"
-		"tall"				"60"
+		"tall"				"48"
 		"autoResize"			"0"
 		"pinCorner"			"3"
 		"visible"			"1"
@@ -123,8 +131,8 @@
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
 		
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -137,7 +145,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
@@ -148,24 +156,26 @@
 
 	"MenuBar_TF2SettingsButton"
 	{
-		"ControlName"			"CExImageButton"
-		"fieldName"			"MenuBar_TF2SettingsButton"
-		"xpos"				"0"
-		"ypos"				"c-90"
-		"wide"				"60"
-		"tall"				"60"
-		"autoResize"			"0"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"tabPosition"			"0"
-		"labelText"			""
-		"textAlignment"		"north-west"
-		"textinsetx"			"18"
-		"dulltext"			"0"
-		"brighttext"			"0"
-		"default"			"1"
-		"Command"			"opentf2options"
+		"ControlName"				"CExImageButton"
+		"fieldName"				"MenuBar_TF2SettingsButton"
+		"xpos"					"0"
+		"ypos"					"120" //"c-90"
+		"wide"					"o1.0"
+		"tall"					"48"
+		"autoResize"				"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"				"0"
+		"font"					"HudFontMediumBold" //"HudFontSmallBold"
+		"textAlignment"			"north-west"
+		"textinsetx"				"34"
+		"textinsety"				"-2"
+		"dulltext"				"0"
+		"brighttext"				"0"
+		"labelText"				"+"
+		"default"				"1"
+		"Command"				"opentf2options"
 		"use_proportional_insets"	"1"
 		
 		"RoundedCorners"		"0"
@@ -177,8 +187,11 @@
 		"sound_released"		"UI/buttonclickrelease.wav"
 		//"border_default"		"MainMenuSubButtonBorder"
 			
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
+		
+		"defaultFgColor_override" 	"235 226 202 255"
+		"armedFgColor_override" 	"255 255 255 255"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -191,11 +204,13 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
-			"image"				"demez\menu\options_advanced"
+			// cant use custom images in casual
+			//"image"				"demez\menu\options_advanced"
+			"image"				"glyph_options"
 			"scaleImage"			"1"
 			"proportionaltoparent"	"1"
 		}				
@@ -224,9 +239,9 @@
 		"ControlName"			"CExImageButton"
 		"fieldName"				"MenuBar_GeneralStoreButton"
 		"xpos"					"0"
-		"ypos"					"c-30"
+		"ypos"					"168"
 		"wide"					"o1.0"
-		"tall"					"60"
+		"tall"					"48"
 		"autoResize"				"0"
 		"pinCorner"				"0"
 		"visible"				"1"
@@ -250,8 +265,8 @@
 			
 		"paintbackground"			"1"
 				
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -264,7 +279,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
@@ -278,23 +293,25 @@
 		"ControlName"				"CExImageButton"
 		"fieldName"				"MenuBar_DemoUI"
 		"xpos"					"0"
-		"ypos"					"c+30" // 240 - 30
+		"ypos"					"216" // 240 - 30
 		"wide"					"o1.0"
-		"tall"					"60"
+		"tall"					"48"
 		"autoResize"				"0"
 		"pinCorner"				"0"
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"				"0"
 		"textinsetx"				"0"
-		"use_proportional_insets" "1"
-		"font"					"HudFontSmallBold"
+		"textinsety"				"5"
+		"use_proportional_insets" 	"1"
+		//"font"					"HudFontSmall"
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"				"0"
 		"default"				"1"
 		"command"				"engine demoui"
-		"labeltext"				"DemoUI"
+		//"labeltext"				"DemoUI"
+		"labeltext"				"Dem"
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
 		"proportionaltoparent"		"1"
@@ -303,8 +320,8 @@
 		
 		"RoundedCorners"			"0"
 				
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
 		
 		"defaultFgColor_override" 	"235 226 202 255"
 		"armedFgColor_override" 	"255 255 255 255"
@@ -320,12 +337,12 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
-			"image"				""
 			"proportionaltoparent"	"1"
+			"image"				"glyph_tv"
 		}		
 	}
 	
@@ -334,9 +351,9 @@
 		"ControlName"				"CExImageButton"
 		"fieldName"				"MenuBar_ReplayButton"
 		"xpos"					"0"
-		"ypos"					"c+90"
+		"ypos"					"264"
 		"wide"					"o1.0"
-		"tall"					"60"
+		"tall"					"48"
 		"autoResize"				"0"
 		"pinCorner"				"0"
 		"visible"				"1"
@@ -360,8 +377,8 @@
 		
 		"RoundedCorners"			"0"
 		
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -374,7 +391,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
@@ -383,6 +400,61 @@
 			"image"				"glyph_tv"
 			
 		}				
+	}		
+	
+	"MenuBar_AchievementsButton"
+	{
+		"ControlName"				"CExImageButton"
+		"fieldName"				"MenuBar_AchievementsButton"
+		"xpos"					"0"
+		"ypos"					"312"
+		"wide"					"o1.0"
+		"tall"					"48"
+		"autoResize"				"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"				"0"
+		"labelText"				""
+		"font"					"HudFontSmallBold"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"				"0"
+		"default"				"1"
+		"Command"				"OpenAchievementsDialog"
+
+		//"navUp"					"VRModeButton"
+		//"navLeft"				"NewUserForumsButton"
+		//"navRight"				"CommentaryButton"
+
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		//"border_default"	"MainMenuSubButtonBorder"
+		
+		"RoundedCorners"			"0"
+		
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
+			
+		"image_drawcolor"			"235 226 202"
+		"image_armedcolor"		"255 255 255"
+		
+		"SubImage"
+		{
+			"ControlName"			"ImagePanel"
+			"fieldName"			"SubImage"
+			"xpos"				"cs-0.5"
+			"ypos"				"cs-0.5"
+			"zpos"				"1"
+			"wide"				"o1.0"
+			"tall"				"24"
+			"visible"			"1"
+			"enabled"			"1"
+			"scaleImage"			"1"
+			"proportionaltoparent"	"1"
+			"scaleImage"			"1"
+			"image"				"glyph_achievements"
+		}				
 	}
 	
 	"MenuBar_ReportBugButton"
@@ -390,9 +462,9 @@
 		"ControlName"				"CExImageButton"
 		"fieldName"				"MenuBar_ReportBugButton"
 		"xpos"					"0"
-		"ypos"					"c+150"
+		"ypos"					"360"
 		"wide"					"o1.0"
-		"tall"					"60"
+		"tall"					"48"
 		"autoResize"				"0"
 		"pinCorner"				"0"
 		"visible"				"1"
@@ -410,13 +482,13 @@
 		"navLeft"				"CoachPlayersButton"
 		"navRight"				"SettingsButton"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_depressed"			"UI/buttonclick.wav"
+		"sound_released"			"UI/buttonclickrelease.wav"
 		
 		"RoundedCorners"			"0"
 		
-		"defaultBgColor_override" 	"128 128 128 128"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"128 128 128 0"
+		"armedBgColor_override" 	"128 128 128 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -429,7 +501,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"30"
+			"tall"				"24"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
@@ -437,7 +509,7 @@
 			"scaleImage"			"1"
 			"image"				"glyph_bug"
 		}				
-	}			
+	}	
 	
 	// --------------------------
 	// small buttons
@@ -446,13 +518,13 @@
 		"ControlName"				"CExImageButton"
 		"fieldName"				"MenuBar_CommentaryButton"
 		"xpos"					"0"
-		"ypos"					"c+210"
+		"ypos"					"456"
 		"wide"					"o1.0"
-		"tall"					"32" // uh
+		"tall"					"24" // uh
 		"autoResize"				"0"
 		"pinCorner"				"0"
-		"visible"				"1"
-		"enabled"				"1"
+		"visible"				"0"
+		"enabled"				"0"
 		"tabPosition"				"0"
 		"labelText"				""
 		"font"					"HudFontSmallBold"
@@ -472,8 +544,8 @@
 		
 		"RoundedCorners"			"0"
 		
-		"defaultBgColor_override" 	"64 64 64 128"
-		"armedBgColor_override" 	"64 64 64 128"
+		"defaultBgColor_override" 	"64 64 64 0"
+		"armedBgColor_override" 	"64 64 64 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -486,7 +558,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"15.5"
+			"tall"				"12"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"
@@ -500,14 +572,14 @@
 	{
 		"ControlName"				"CExImageButton"
 		"fieldName"				"MenuBar_WorkshopButton"
-		"xpos"					"31"
-		"ypos"					"c+210"
+		"xpos"					"24"
+		"ypos"					"456"
 		"wide"					"o1.0"
-		"tall"					"31"
+		"tall"					"24"
 		"autoResize"				"0"
 		"pinCorner"				"0"
-		"visible"				"1"
-		"enabled"				"1"
+		"visible"				"0"
+		"enabled"				"0"
 		"tabPosition"				"0"
 		"labelText"				""
 		"font"					"HudFontSmallBold"
@@ -527,8 +599,8 @@
 		
 		"RoundedCorners"			"0"
 		
-		"defaultBgColor_override" 	"64 64 64 128"
-		"armedBgColor_override" 	"64 64 64 128"
+		"defaultBgColor_override" 	"64 64 64 0"
+		"armedBgColor_override" 	"64 64 64 0"
 			
 		"image_drawcolor"			"235 226 202"
 		"image_armedcolor"		"255 255 255"
@@ -541,7 +613,7 @@
 			"ypos"				"cs-0.5"
 			"zpos"				"1"
 			"wide"				"o1.0"
-			"tall"				"15.5"
+			"tall"				"12"
 			"visible"			"1"
 			"enabled"			"1"
 			"scaleImage"			"1"

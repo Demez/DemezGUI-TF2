@@ -1,17 +1,18 @@
 // Main Menu - Rank
 // Rest of this stuff is in: pvprankpanel.res and pvpcomprankpanel.res
-// Move to overlap MMDashboard once that is changed
+// Move to overlap MMDashboard
 "Resource/UI/MainMenuOverride.res"
 {
 	"RankPanel"
 	{
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankPanel"
-		"xpos"			"16" //72 //"c-350"
-		"ypos"			"128" //72
-		"zpos"			"-52"
-		"wide"			"260"
-		"tall"			"100" //"100"
+		"xpos"			"rs1" //72 //"c-350"
+		"ypos"			"80" //72
+		//"zpos"			"-52"
+		"zpos"			"0"
+		"wide"			"144"
+		"tall"			"80" //"100"
 		"visible"		"0"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"0"
@@ -24,30 +25,37 @@
 	
 	"RankBorder"
 	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"RankBorder"
-		"xpos"			"72" //"c-290"
-		"ypos"			"94"
-		"zpos"			"-100"
-		"wide"			"260"
-		"tall"			"120" //"60"
-		"visible"		"1"
-		"PaintBackgroundType"	"2"
+		"ControlName"				"EditablePanel"
+		"fieldName"				"RankBorder"
+		"xpos"					"rs1" //"c-290"
+		"ypos"					"24"
+		"zpos"					"-100"
+		"wide"					"144"
+		"tall"					"136" //"60"
+		"visible"				"1"
+		"PaintBackgroundType"		"2"
 		//"border"				"MainMenuBGBorder"
-		"bgcolor_override"		"64 64 64 192"
-		"proportionaltoparent"	"1"
+		"bgcolor_override"		"64 64 64 128"
+		"proportionaltoparent"		"1"
+		
+		"RoundedCorners"			"0"
+		
+		//"defaultBgColor_override" 	"64 64 64 0"
+		//"armedBgColor_override" 	"64 64 64 0"
 	}
 	
 	"RankModelPanel"
 	{
 		"ControlName"			"CPvPRankPanel"
 		"fieldName"			"RankModelPanel"
-		"xpos"				"-392"//"cs-0.5-192" //"cs-0.5-256"
-		"ypos"				"cs-0.5-120"
-
+		"xpos"				"rs1"//"cs-0.5-192" //"cs-0.5-256"
+		"ypos"				"-18" //"cs-0.5-120"
 		"zpos"				"-51"
-		"wide"				"1000"
-		"tall"				"1000"
+		//"zpos"				"10102"
+		//"wide"				"1000"
+		//"tall"				"1000"
+		"wide"				"144"
+		"tall"				"144"
 		"visible"			"0"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"1"
@@ -61,10 +69,11 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CycleRankTypeButton"
-		"xpos"			"312" //"cs-0.5-44"
-		"ypos"			"cs-0.5-134"
-		"wide"			"15"
-		"tall"			"15"
+		"xpos"			"rs0.5-128" // why did i make this more complex then it needs to be lmao
+		"ypos"			"32"
+		"zpos"			"10101"
+		"wide"			"16"
+		"tall"			"16"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -86,10 +95,10 @@
 				
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-		"paintbackground"	"1"
+		"paintbackground"	"0"
 		"paintborder"		"0"
-		"image_drawcolor"		"235 226 202 255"
-		"image_armedcolor"	"255 255 255 255"
+		"image_drawcolor"		"235 226 202"
+		"image_armedcolor"	"255 255 255"
 
 		"SubImage"
 		{
@@ -115,8 +124,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RankTooltipPanel"
-		"xpos"			"c-285"
-		"ypos"			"99"
+		"xpos"			"rs2.5"
+		"ypos"			"36"
 		"zpos"			"-1"
 		"wide"			"8"
 		"tall"			"8"
