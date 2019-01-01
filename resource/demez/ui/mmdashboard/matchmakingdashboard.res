@@ -45,7 +45,7 @@
 			"visible"		"1"
 			"PaintBackgroundType"	"2"
 			//"border"		"ReplayDefaultBorder"
-			"bgcolor_override"		"64 64 64 64"
+			"bgcolor_override"		"64 64 64 128"
 			"proportionaltoparent"	"1"
 		}
 		
@@ -76,11 +76,15 @@
 			"mouseinputenabled"	"1"
 			"keyboardinputenabled"	"0"
 			"actionsignallevel"	"2"
+			
 			"roundedcorners"		"0"
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-
+		
+			"defaultBgColor_override" 	"128 128 128 0"
+			"armedBgColor_override" 	"128 128 128 64"			
+			
 			"image_drawcolor"	"TanLight"
 			"image_armedcolor"	"TanLight"
 

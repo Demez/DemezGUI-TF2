@@ -8,7 +8,7 @@
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankPanel"
 		"xpos"			"rs1" //72 //"c-350"
-		"ypos"			"80" //72
+		"ypos"			"128" //80
 		//"zpos"			"-52"
 		"zpos"			"0"
 		"wide"			"144"
@@ -29,13 +29,13 @@
 		"fieldName"				"RankBorder"
 		"xpos"					"rs1" //"c-290"
 		"ypos"					"24"
-		"zpos"					"-100"
+		"zpos"					"-60"
 		"wide"					"144"
-		"tall"					"136" //"60"
+		"tall"					"184" //"136"
 		"visible"				"1"
 		"PaintBackgroundType"		"2"
 		//"border"				"MainMenuBGBorder"
-		"bgcolor_override"		"64 64 64 128"
+		"bgcolor_override"		"128 128 128 64"
 		"proportionaltoparent"		"1"
 		
 		"RoundedCorners"			"0"
@@ -48,17 +48,15 @@
 	{
 		"ControlName"			"CPvPRankPanel"
 		"fieldName"			"RankModelPanel"
-		"xpos"				"rs1"//"cs-0.5-192" //"cs-0.5-256"
-		"ypos"				"-18" //"cs-0.5-120"
+		"xpos"				"rs1"
+		"ypos"				"24" //"-18" or -16?
 		"zpos"				"-51"
-		//"zpos"				"10102"
-		//"wide"				"1000"
-		//"tall"				"1000"
 		"wide"				"144"
 		"tall"				"144"
 		"visible"			"0"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"1"
+		"alpha"				"25"
 
 		"matchgroup"			"MatchGroup_Casual_12v12"
 
@@ -69,12 +67,11 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CycleRankTypeButton"
-		"xpos"			"rs0.5-128" // why did i make this more complex then it needs to be lmao
+		"xpos"			"r136"
 		"ypos"			"32"
-		"zpos"			"10101"
 		"wide"			"16"
 		"tall"			"16"
-		"autoResize"	"0"
+		"autoResize"		"0"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"

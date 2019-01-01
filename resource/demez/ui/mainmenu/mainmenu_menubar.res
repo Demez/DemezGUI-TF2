@@ -122,11 +122,13 @@
 		"default"			"1"
 		"Command"			"OpenOptionsDialog"
 		
+		// setting this to 0 shows the button depressed state only for the background?
+		// also ignores the bg color after pressing it already
+		//"button_activation_type"	"0"
+		
 		"RoundedCorners"		"0"
 
 		//"navUp"					"Notifications_Panel"
-		//"navLeft"				"ReportBugButton"
-		//"navRight"				"TF2SettingsButton"
 
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"

@@ -79,8 +79,6 @@
 		"scaleImage"	"1"
 		"proportionaltoparent" "1"
 	}	
-
-	
 	
 	"TooltipPanel"
 	{
@@ -228,20 +226,21 @@
 		"visible"		"0"
 	}
 	
-	// TODO: Make this slide out, like other panels can
+	// Shove this in a seperate res file?
 	"FriendsContainer"
 	{
 		"ControlName"			"EditablePanel"
 		"fieldname"			"FriendsContainer"
 		"xpos"				"r144"
-		"ypos"				"160"
+		"ypos"				"208" //"160"
 		"zpos"				"5"
 		"wide"				"144"
-		"tall"				"f+160"
+		"tall"				"f+208" //"f+160"
 		"visible"			"1"
 
 		//"border"		"MainMenuBGBorder"
-		"bgcolor_override"	"128 128 128 32"
+		//"bgcolor_override"	"128 128 128 32"
+		"bgcolor_override"	"32 32 32 160"
 
 		"TitleLabel"
 		{
@@ -274,10 +273,10 @@
 			"ControlName"			"CSteamFriendsListPanel"
 			"fieldname"			"SteamFriendsList"
 			"xpos"				"0" //"cs-0.5"
-			"ypos"				"4"
+			"ypos"				"0" //"4"
 			"zpos"				"500"
 			"wide"				"f"
-			"tall"				"f+8" // for gaps on top and botton
+			"tall"				"f" //"f+8" // for gaps on top and botton
 			"visible"			"1"
 			"proportionaltoparent"	"1"
 
@@ -310,7 +309,7 @@
 
 				"Slider"
 				{
-					"fgcolor_override"	"128 128 128 64" //"TanDark"
+					"fgcolor_override"	"192 192 192 48" //"TanDark"
 				}
 		
 				"UpButton"
@@ -329,254 +328,6 @@
 			}
 		}
 	}
-	
-	// maybe move this somewhere better later?
-	// right now its off the screen lmao
-	// im probably going to forget this exists lmao
-	"EventPromo"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"EventPromo"
-		"xpos"			"-300" //"c-290"
-		"ypos"			"340" //"160"
-		"zpos"			"-50"
-		"wide"			"270"
-		"tall"			"96"
-		"visible"		"0"
-		"enabled"		"0"
-
-		"Background"
-		{
-			"ControlName"	"EditablePanel"
-			"fieldname"		"Background"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"0"
-			"wide"			"260"
-//			"tall"			"120"
-			"tall"			"96"
-			"visible"		"1"
-			"PaintBackgroundType"	"0"
-			"proportionaltoparent"	"1"
-
-			"paintborder"	"1"
-			"border"		"MainMenuBGBorder"
-
-			"TitleLabel"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"TitleLabel"
-				"font"			"HudFontSmallBold"
-				"labelText"		"#MMenu_Update"
-				"textAlignment"	"west"
-				"xpos"			"12"
-				"ypos"			"0"
-				"wide"			"f0"
-				"tall"			"30"
-				"autoResize"	"0"
-				"pinCorner"		"0"
-				"visible"		"1"
-				"enabled"		"1"
-				"textinsetx"	"0"
-				"fgcolor_override"	"235 227 203 255"
-			}
-
-//			"ViewDetailsGlow"
-//			{
-//				"ControlName"	"Panel"
-//				"fieldName"		"ViewDetailsGlow"
-//				"xpos"			"p0.02"
-//				"ypos"			"27"
-//				"zpos"			"10"
-//				"wide"			"p0.48"
-//				"tall"			"26"
-//				"visible"		"0"
-//				"proportionaltoparent"	"1"
-//
-//				"paintborder"	"0"
-//				"border"	"MainMenuButtonGlow"
-//				"paintbackground"		"3"
-//				"bgcolor_override"	"238 103 17 255"
-//			}
-//
-//			"ViewDetailsButton"
-//			{
-//				"ControlName"	"EditablePanel"
-//				"fieldname"		"ViewDetailsButton"
-//				"xpos"			"p0.02"
-//				"ypos"			"27"
-//				"zpos"			"11"
-//				"wide"			"p0.48"
-//				"tall"			"26"
-//				"visible"		"1"
-//				"PaintBackgroundType"	"0"
-//				"proportionaltoparent"	"1"
-//
-//				"SubButton"
-//				{
-//					"ControlName"	"CExImageButton"
-//					"fieldName"		"SubButton"
-//					"xpos"			"cs-0.5"
-//					"ypos"			"0"
-//					"wide"			"f0"
-//					"tall"			"f0"
-//					"autoResize"	"0"
-//					"pinCorner"		"3"
-//					"visible"		"1"
-//					"enabled"		"1"
-//					"tabPosition"	"0"
-//					"use_proportional_insets" "1"
-//					"font"			"HudFontSmallBold"
-//					"textAlignment"	"center"
-//					"dulltext"		"0"
-//					"brighttext"	"0"
-//					"default"		"1"
-//					"sound_depressed"	"UI/buttonclick.wav"
-//					"sound_released"	"UI/buttonclickrelease.wav"
-//					"labeltext"		"#MMenu_ViewUpdateDetails"
-//					"proportionaltoparent"	"1"
-//					"command"		"view_update_page"
-//					"actionsignallevel"	"4"
-//			
-//					"border_default"	"MainMenuButtonDefault"
-//					"border_armed"		"MainMenuButtonArmed"
-//					"paintbackground"	"0"
-//			
-//					"defaultFgColor_override" "46 43 42 255"
-//					"armedFgColor_override" "235 226 202 255"
-//					"depressedFgColor_override" "46 43 42 255"
-//			
-//					"image_drawcolor"	"117 107 94 255"
-//					"image_armedcolor"	"235 226 202 255"
-//				}
-//			}
-//
-//			"ViewWarButtonGlow"
-//			{
-//				"ControlName"	"Panel"
-//				"fieldName"		"ViewWarButtonGlow"
-//				"xpos"			"p0.5"
-//				"ypos"			"27"
-//				"zpos"			"10"
-//				"wide"			"124"
-//				"tall"			"26"
-//				"visible"		"0"
-//				"proportionaltoparent"	"1"
-//
-//				"paintborder"	"0"
-//				"border"	"MainMenuButtonGlow"
-//				"paintbackground"		"3"
-//				"bgcolor_override"	"238 103 17 255"
-//			}
-//
-//			"ViewWarButton"
-//			{
-//				"ControlName"	"EditablePanel"
-//				"fieldname"		"ViewWarButton"
-//				"xpos"			"p0.5"
-//				"ypos"			"27"
-//				"zpos"			"11"
-//				"wide"			"p0.48"
-//				"tall"			"26"
-//				"visible"		"1"
-//				"PaintBackgroundType"	"0"
-//				"proportionaltoparent"	"1"
-//
-//				"SubButton"
-//				{
-//					"ControlName"	"CExImageButton"
-//					"fieldName"		"SubButton"
-//					"xpos"			"cs-0.5"
-//					"ypos"			"0"
-//					"wide"			"f0"
-//					"tall"			"f0"
-//					"autoResize"	"0"
-//					"pinCorner"		"3"
-//					"visible"		"1"
-//					"enabled"		"1"
-//					"tabPosition"	"0"
-//					"use_proportional_insets" "1"
-//					"font"			"HudFontSmallBold"
-//					"textAlignment"	"center"
-//					"dulltext"		"0"
-//					"brighttext"	"0"
-//					"default"		"1"
-//					"sound_depressed"	"UI/buttonclick.wav"
-//					"sound_released"	"UI/buttonclickrelease.wav"
-//					"labeltext"		"#MMenu_ViewWar"
-//					"proportionaltoparent"	"1"
-//					"command"		"view_war"
-//					"actionsignallevel"	"4"
-//			
-//					"border_default"	"MainMenuButtonDefault"
-//					"border_armed"		"MainMenuButtonArmed"
-//					"paintbackground"	"0"
-//			
-//					"defaultFgColor_override" "46 43 42 255"
-//					"armedFgColor_override" "235 226 202 255"
-//					"depressedFgColor_override" "46 43 42 255"
-//			
-//					"image_drawcolor"	"117 107 94 255"
-//					"image_armedcolor"	"235 226 202 255"
-//				}
-//			}
-			
-			"CyclingAd"
-			{
-				"ControlName"			"CCyclingAdContainerPanel"
-				"fieldName"				"CyclingAd"
-				"xpos"					"5"
-//				"ypos"					"p0.47"
-				"ypos"					"27"
-				"zpos"					"100"
-				"wide"					"f10"
-//				"tall"					"p0.5"
-				"tall"					"60"
-				"visible"				"1"
-				"enabled"				"1"
-				"scaleImage"			"1"
-				"proportionaltoparent"	"1"
-
-				"bgcolor_override"		"0 0 0 255"
-
-				"items"
-				{
-					"0"
-					{
-						"item"		"Halloween 2018 Key" 
-						"show_market"	"0"
-					}
-					"1"
-					{
-						"item"		"Halloween 2018 Case"
-						"show_market"	"1"
-					}
-					"2"
-					{
-						"item"		"Scream Fortress 2018 War Paint Key"
-						"show_market"	"0"
-					}
-					"3"
-					{
-						"item"		"Scream Fortress 2018 War Paint Case"
-						"show_market"	"1"
-					}
-					"4"
-					{
-						"item"		"Taunt: Panzer Pants"
-						"show_market"	"0"
-					}
-					"5"
-					{
-						"item"		"Taunt: The Scooty Scoot"
-						"show_market"	"0"
-					}					
-				}
-			}
-
-		} // Background
-
-	} // EventPromo
 
 	"SafeMode"
 	{

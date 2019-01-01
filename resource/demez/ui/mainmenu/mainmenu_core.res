@@ -184,17 +184,17 @@
 	"TFLogoImage"
 	{
 		"ControlName"			"ImagePanel"
-		"fieldName"			"TFLogoImage"
-		"xpos"				"64" //"c-290"
-		"ypos"				"40"
-		"zpos"				"-150"
-		"wide"				"256"
-		"tall"				"64"
-		"visible"			"1"
-		"enabled"			"1"
-		"image"				"../logo/new_tf2_logo"
+		"fieldName"				"TFLogoImage"
+		"xpos"					"rs1-8" //"p0.125"
+		"ypos"					"32"
+		"zpos"					"-52" //"-150"
+		"wide"					"128"
+		"tall"					"o0.25"
+		"visible"				"1"
+		"enabled"				"1"
+		"image"					"../logo/new_tf2_logo"
 		"scaleImage"			"1"
-		"mouseinputenabled"	"0"
+		"mouseinputenabled"		"0"
 	}	
 	
 	"TFCharacterImage"
@@ -209,5 +209,21 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"
+	}
+	
+	// Ok so apparently dashboard dimmer isnt shown anywhere
+	// HOWEVER, i can recreate it here and control it here
+	"DashboardDimmer"
+	{
+		"fieldName"						"DashboardDimmer"
+		"xpos"							"cs-0.5"
+		"ypos"							"0"
+		"zpos"							"-60"
+		"wide"							"f"
+		"tall"							"f"
+		// keep it enabled so you can click on this to close the side menus
+		"visible"						"1"
+		"enabled"						"1"
+		"paintbackground"				"0"
 	}
 }

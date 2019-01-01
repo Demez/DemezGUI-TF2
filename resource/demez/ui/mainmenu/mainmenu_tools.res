@@ -8,30 +8,34 @@
 //		- mat_antialias
 //		- mat_aaquality
 
-// Move to MMDashboard so it can show everywhere?
+// I would move this to mmdashboard, but the engine command doesnt seem to work there
+// so instead, this just lays over it and load this file from multiple places lmao
 "Resource/UI/MainMenuOverride.res"
 {
 	"Tool_UI_Reload"
 	{
 		"ControlName"				"CExButton"
-		"fieldName"				"Tool_UI_Reload"
-		"xpos"					"0"
-		"ypos"					"r72" // 240 - 30
-		"zpos"					"5"
-		"wide"					"48"
-		"tall"					"24"
-		"visible"				"1"
-		"enabled"				"1"
+		"fieldName"					"Tool_UI_Reload"
+		"xpos"						"s7"
+		"ypos"						"0"
+		"zpos"						"10100"
+		"wide"						"o1.0"
+		"tall"						"24"
+		"visible"					"1"
+		"enabled"					"1"
 		"RoundedCorners"			"0"
 		
-		"paintbackground"			"0"
+		"paintbackground"			"1"
+		
+		"defaultBgColor_override" 	"0 0 0 0"
+		"armedBgColor_override" 	"128 128 128 96"
 		
 		"defaultFgColor_override" 	"235 226 202 192"
 		"armedFgColor_override" 	"255 255 255 255"
 		
 		"textAlignment"			"center"
 		"labelText"				"UI"
-		"font"					"HudFontSmallestBold"
+		//"font"					"HudFontSmallestBold"
 		
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
@@ -44,27 +48,27 @@
 	"Tool_UI_Reload_DemoUI"
 	{
 		"ControlName"				"CExButton"
-		"fieldName"				"Tool_UI_Reload_DemoUI"
-		"xpos"					"48"
-		"ypos"					"r48" // 240 - 30
-		"zpos"					"5"
-		"wide"					"48"
-		"tall"					"24"
-		"visible"				"1"
-		"enabled"				"1"
+		"fieldName"					"Tool_UI_Reload_DemoUI"
+		"xpos"						"s8"
+		"ypos"						"0"
+		"zpos"						"10100"
+		"wide"						"o1.0"
+		"tall"						"24"
+		"visible"					"1"
+		"enabled"					"1"
 		"RoundedCorners"			"0"
 		
 		"paintbackground"			"1"
 		
-		"defaultBgColor_override" 	"128 128 128 64"
-		"armedBgColor_override" 	"128 128 128 128"
+		"defaultBgColor_override" 	"0 0 0 0"
+		"armedBgColor_override" 	"128 128 128 96"
 		
 		"defaultFgColor_override" 	"235 226 202 192"
 		"armedFgColor_override" 	"255 255 255 255"
 		
 		"textAlignment"			"center"
-		"labelText"				"UI lite"
-		"font"					"HudFontSmallestBold"
+		"labelText"				"UI L"
+		//"font"					"HudFontSmallestBold"
 		
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
@@ -77,15 +81,18 @@
 	{
 		"ControlName"				"CExButton"
 		"fieldName"				"Tool_UI_Reload_Scheme"
-		"xpos"					"48"
-		"ypos"					"r72" // 240 - 30
-		"wide"					"48"
-		"tall"					"24"
-		"visible"				"1"
-		"enabled"				"1"
+		"xpos"						"s4.5" //"s9"
+		"ypos"						"0"
+		"zpos"						"10100"
+		"wide"						"o2.0"
+		"tall"						"24"
+		"visible"					"1"
+		"enabled"					"1"
 		"RoundedCorners"			"0"
 		
-		"defaultBgColor_override" 	"128 128 128 32"
+		"paintbackground"			"1"
+		
+		"defaultBgColor_override" 	"0 0 0 0"
 		"armedBgColor_override" 	"128 128 128 96"
 		
 		"defaultFgColor_override" 	"235 226 202 192"
@@ -93,7 +100,7 @@
 		
 		"textAlignment"			"center"
 		"labelText"				"Scheme"
-		"font"					"HudFontSmallest"
+		//"font"					"HudFontSmallest"
 		
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
@@ -106,23 +113,25 @@
 	{
 		"ControlName"				"CExButton"
 		"fieldName"				"Tool_hud_reloadscheme"
-		"xpos"					"0"
-		"ypos"					"r48" // 240 - 30
-		"zpos"					"5"
-		"wide"					"48"
-		"tall"					"24"
-		"visible"				"1"
-		"enabled"				"1"
+		"xpos"						"s11"
+		"ypos"						"0"
+		"zpos"						"10100"
+		"wide"						"o1.0"
+		"tall"						"24"
+		"visible"					"1"
+		"enabled"					"1"
 		"RoundedCorners"			"0"
 		
-		"paintbackground"			"0"
+		"paintbackground"			"1"
+		
+		"defaultBgColor_override" 	"0 0 0 0"
+		"armedBgColor_override" 	"128 128 128 96"
 		
 		"defaultFgColor_override" 	"235 226 202 192"
 		"armedFgColor_override" 	"255 255 255 255"
 		
 		"textAlignment"			"center"
 		"labelText"				"HUD"
-		"font"					"HudFontSmallestBold"
 		
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
@@ -134,23 +143,26 @@
 	{
 		"ControlName"				"CExButton"
 		"fieldName"				"Tool_VGUI_Tree"
-		"xpos"					"0"
-		"ypos"					"r24" // 240 - 30
-		"zpos"					"5"
-		"wide"					"48"
-		"tall"					"24"
-		"visible"				"1"
-		"enabled"				"1"
+		"xpos"						"s12"
+		"ypos"						"0"
+		"zpos"						"10100"
+		"wide"						"o1.0"
+		"tall"						"24"
+		"visible"					"1"
+		"enabled"					"1"
 		"RoundedCorners"			"0"
 		
-		"paintbackground"			"0"
+		"paintbackground"			"1"
+		
+		"defaultBgColor_override" 	"0 0 0 0"
+		"armedBgColor_override" 	"128 128 128 96"
 		
 		"defaultFgColor_override" 	"235 226 202 192"
 		"armedFgColor_override" 	"255 255 255 255"
 		
 		"textAlignment"			"center"
 		"labelText"				"Tree"
-		"font"					"HudFontSmallestBold"
+		//"font"					"HudFontSmallestBold"
 		
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"

@@ -1,0 +1,1 @@
+#base "../demez/ui/mainmenu/streamlistpanel.res"
