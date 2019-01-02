@@ -1,0 +1,1 @@
+#base "../demez/ui/hud/playerstatus/hudplayerclass.res"

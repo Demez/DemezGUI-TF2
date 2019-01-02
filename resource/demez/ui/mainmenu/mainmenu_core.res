@@ -213,6 +213,9 @@
 	
 	// Ok so apparently dashboard dimmer isnt shown anywhere
 	// HOWEVER, i can recreate it here and control it here
+	// ...except for this to work you need to reload the hud ingame
+	// fuck
+	// maybe make a new panel below this so it doesnt look off in the side panel res file?
 	"DashboardDimmer"
 	{
 		"fieldName"						"DashboardDimmer"

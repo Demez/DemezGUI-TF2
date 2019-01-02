@@ -7,7 +7,7 @@ Scheme
 	// this is a list of all the colors used by the scheme
 	Colors
 	{
-	    "TFDarkBrown"               "60 56 53 255"
+	    "TFDarkBrown"               "60 56 53 128"
 	    "TFDarkBrownTransparent"    "60 56 53 190"
 	    "TFTanBright"               "236 227 203 150"
 	    "TFTanLight"                "201 188 162 150"
@@ -33,24 +33,12 @@ Scheme
 	    "Blank"				"0 0 0 0"
 	    
 	    // background colors
-		"ControlBG"			"76 88 68 255"		// background color of controls
-		"ControlDarkBG"		"90 106 80 255"		// darker background color; used for background of scrollbars
-		"WindowBG"			"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
-		"SelectionBG"		"90 84 75 255"	// background color of any selected text or menu item
-		"SelectionBG2"		"69 64 57 255"		// selection background in window w/o focus
-		"ListBG"			"39 36 34 255"		// background of server browser, buddy list, etc.
-		
-		// --------------------------------
-		// DemezGUI Colors
-		
-		"DemezMenuButton"					"128 128 128 192"
-		"DemezMenuButton_Armed"			"192 192 192 192"
-		
-		"DemezMenuButton_Small"			"64 64 64 192"
-		"DemezMenuButton_Small_Armed"		"96 96 96 192"
-		
-		"DemezMenuButton_Icon"				"235 226 202"
-		"DemezMenuButton_Icon_Armed"		"255 255 255 255"
+		"ControlBG"			"76 88 68 192"		// background color of controls
+		"ControlDarkBG"		"90 106 80 192"		// darker background color; used for background of scrollbars
+		"WindowBG"			"62 70 55 192"		// background color of text edit panes (chat, text entries, etc.)
+		"SelectionBG"		"90 84 75 192"	// background color of any selected text or menu item
+		"SelectionBG2"		"69 64 57 192"		// selection background in window w/o focus
+		"ListBG"			"39 36 34 192"		// background of server browser, buddy list, etc.
 	}
 	BaseSettings
 	{

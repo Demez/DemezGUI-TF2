@@ -1,0 +1,38 @@
+NOTE: move this stuff into a wiki on github, and maybe put it into the valve dev wiki as well
+
+CExLabel
+CExImageButton
+CExButton
+
+EditablePanel
+ImagePanel
+
+Label
+
+CTFTeamButton
+	"team"				"3"		// team blue
+	"associated_model"	"bluedoor"
+	"hover"				"2.0"
+CTFFooter
+CTFImagePanel
+	"teambg_2"		"../hud/ammo_red_bg"
+	"teambg_2_lodef"	"../hud/ammo_red_bg_lodef"
+	"teambg_3"		"../hud/ammo_blue_bg"
+	"teambg_3_lodef"	"../hud/ammo_blue_bg_lodef"		
+
+CModelPanel
+	"fov"			"70"
+CItemModelPanel
+CEmbeddedItemModelPanel
+
+
+
+
+
+==========================================
+Specific Controls?
+==========================================
+
+CCompetitiveAccessInfoPanel
+CSteamFriendsListPanel
+ScrollBar

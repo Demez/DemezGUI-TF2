@@ -1,0 +1,175 @@
+NOTE: move this stuff into a wiki on github, and maybe put it into the valve dev wiki as well
+
+Shared keyvalues for controls
+=================================
+"ControlName"				The Type of Control this is
+"fieldName"					What is shown in VGUI Draw Tree?
+
+You can put these lines at the end of some controls for what it will be when min mode is enabled
+_minmode, _lodef, _hidef
+
+"xpos" 						(Down - Up) 				Sets the position of the control along the X axis 
+"xpos_minmode"				(Down - Up)					Same as above, but is used when TF2 Min Mode is On
+
+"ypos" 						(Left - Right) 				Sets the position of the control along the Y axis 
+"ypos_minmode"
+
+"zpos" 						(Backward - Forward)		Sets the position of the control along the Z axis 
+"zpos_minmode"
+
+"wide"
+"wide_minmode"
+"tall"
+"tall_minmode"
+
+"visible"					"1"
+"enabled"					"1"
+
+"font"						"font name"
+"font_minmode"				"font name"
+"font_hidef"				"font name"
+"font_lodef"				"font name"
+
+"textAlignment"				"west, north-west, north, center, north-east, east, south-east, south, south-west"
+"wrap"						(boolean)					Whether to have the text wrap when it hits the side. NOTE: when this is on, text alignment doesnt work
+
+// this looks like ass
+"tooltiptext"				(text)						When you hover your mouse over something with this keyvalue, this shows up. NOT the one TF2 uses though.
+
+"rotation"					(0, 1, 2, 3)
+
+"RoundedCorners"			(0, 1, 5, 15) 					Whether to have sharp corners (0) or rounded corners 
+
+"proportionaltoparent"		(boolean)					Whether to set variables proportional to the full window or the parent control
+
+"mouseinputenabled"			(boolean)					Whether to take control of the mouse when hovered over, or to ignore it, useful when this is an overlay
+"keyboardinputenabled"?		(boolean)					Whether to take control of the keyboard or to ignore it
+
+// Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead
+---------------------------------------------
+"bgcolor_override"
+"fgcolor_override"			This Generally controls the color of any text value
+
+"image_drawcolor"	"117 107 94 255"
+
+"noitem_textcolor"			idk what this is "117 107 94 255"
+---------------------------------------------
+
+"PaintBackgroundType"		(1, 2) 			idk what this does yet 
+"paintbackground"			(boolean) 		Whether to draw the background or not
+"paintborder"				"1"
+"border"					"MainMenuBGBorder"
+
+
+// not entirely sure what these do, maybe for not using the mouse to navigate?
+"navUp"				Name of any Control Above
+"navDown"			Name of any Control Below
+"navLeft"			Name of any Control to the Left
+"navRight"			Name of any Control to the Right
+"navToRelay"		Name of any Control idk
+
+// idk yet
+"autoResize"	"0"
+"pinCorner"		"3"
+"tabPosition"	"0"
+"textinsetx"	"25"
+"use_proportional_insets" "1"
+"dulltext"		"0"
+"brighttext"	"0"
+"default"		"1"
+"TFFont"					"HudFontSmall"
+"TextColor"					"HudOffWhite"
+
+
+===========================================
+Button keyvalues
+===========================================
+"keyvalue"		you can use "engine" in this keyvalue to enter a command in the console, only works on the menu screen though
+
+
+// Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead
+// also bg/fgcolor_override does not work here
+---------------------------------------------
+"defaultBgcolor_override"
+"armedBgcolor_override"
+"depressedBgcolor_override"
+
+"defaultFgcolor_override"
+"armedFgcolor_override"
+"depressedFgcolor_override"
+
+"image_armedcolor"			"235 226 202 255"
+---------------------------------------------
+
+"sound_depressed"			"UI/buttonclick.wav"				Sound played when button is armed (like mouse over)
+"sound_released"			"UI/buttonclickrelease.wav"			Sound played when button is pressed
+
+// border doesnt work, use these instead
+"border_default"	"MainMenuButtonDefault"
+"border_armed"		"MainMenuButtonArmed"
+
+===========================================
+Image keyvalues
+===========================================		
+"image"					(image directory)					Directory to image relative to vgui folder
+"scaleImage"			(boolean)							Whether to resize/scale the image to fit the entire panel, or leave unchanged in size
+
+===========================================
+Fonts Only
+===========================================
+"FontName"
+{
+	"1"
+	{
+		"name"				"name of font"
+		"tall"				"24"
+		"tall_hidef"		"80"
+		"tall_lodef"		"80"
+		"weight"			"500"			Width i think?
+		"additive"			"0"
+		"antialias" 		"1"
+		"yres"				"480 599"
+		"underline"			"1"
+		"outline"			"1"
+		"dropshadow"		"1"
+		"blur"        		"1"
+		
+		"bitmap"			"1"
+		"scalex"			"0.5"
+		"scalex_lodef"		"0.75"
+		"scaley"			"0.5"
+		"scaley_lodef"		"0.75"
+	}
+}
+
+
+
+===========================================
+CItemModelPanel keyvalues
+===========================================		
+"text_ypos"			"20"
+"text_center"		"1"
+"model_hide"		"1"
+"resize_to_text"	"1"
+"padding_height"	"15"
+
+===========================================
+CEmbeddedItemModelPanel keyvalues
+===========================================		
+"useparentbg"		"1"
+	
+		"inset_eq_x"	"2"
+		"inset_eq_y"	"2"
+
+		"fov"			"54"
+		"start_framed"		"1"
+
+		"disable_manipulation"	"1"
+
+		"model"
+		{
+			"angles_x"		"10"
+			"angles_y"		"130"
+			"angles_z"		"0"
+		}
+		

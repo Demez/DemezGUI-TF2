@@ -525,8 +525,8 @@
 		"tall"					"24" // uh
 		"autoResize"				"0"
 		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"0"
+		"visible"				"1"
+		"enabled"				"1"
 		"tabPosition"				"0"
 		"labelText"				""
 		"font"					"HudFontSmallBold"
@@ -570,6 +570,7 @@
 		}				
 	}
 	
+	// move this to bar
 	"MenuBar_WorkshopButton"
 	{
 		"ControlName"				"CExImageButton"
@@ -624,4 +625,64 @@
 			"image"				"glyph_steamworkshop"
 		}				
 	}	
+	
+	"MenuBar_Toggle_MinMode"
+	{
+		"ControlName"			"CExImageButton"
+		"fieldName"				"MenuBar_Toggle_MinMode"
+		"xpos"					"24"
+		"ypos"					"456"
+		"wide"					"o1.0"
+		"tall"					"24"
+		"autoResize"				"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"				"0"
+		"labelText"				"MIN"
+		//"font"					"HudFontSmallBold"
+		"textAlignment"			"center"
+		
+		"dulltext"				"0"
+		"brighttext"				"0"
+		"default"				"1"
+		"Command"				"engine incrementvar cl_hud_minmode 0 1 1"
+
+		"navUp"					"VRModeButton"
+		"navLeft"				"AchievementsButton"
+		"navRight"				"CoachPlayersButton"
+
+		"sound_depressed"			"UI/buttonclick.wav"
+		"sound_released"			"UI/buttonclickrelease.wav"
+		//"border_default"			"MainMenuSubButtonBorder"
+		
+		"RoundedCorners"			"0"
+		
+		"defaultBgColor_override" 	"64 64 64 0"
+		"armedBgColor_override" 	"64 64 64 0"
+		
+		"defaultFgColor_override"	"235 226 202 255"
+		"armedFgColor_override"		"255 255 255 255"
+			
+		"image_drawcolor"			"235 226 202"
+		"image_armedcolor"		"255 255 255"
+		
+		"SubImage"
+		{
+			"ControlName"			"ImagePanel"
+			"fieldName"			"SubImage"
+			"xpos"				"cs-0.5"
+			"ypos"				"cs-0.5"
+			"zpos"				"1"
+			"wide"				"o1.0"
+			"tall"				"12"
+			"visible"			"1"
+			"enabled"			"1"
+			"scaleImage"			"1"
+			"proportionaltoparent"	"1"
+			"scaleImage"			"1"
+			//"image_minmode"				"accept_button"
+		}				
+	}
+	
 }

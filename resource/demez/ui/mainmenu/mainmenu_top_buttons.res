@@ -524,12 +524,14 @@
 				"xpos"			"cs-0.5"
 				"ypos"			"cs-0.5"
 				"zpos"			"1"
-				"wide"			"f0"
-				"tall"			"f0"
+				"wide"			"o1.0"
+				"tall"			"f-2" //"26"
 				"visible"		"1"
 				"enabled"		"1"
 				"scaleImage"	"1"
-				"image"			"button_quests_pda"
+				//"image"			"button_quests_pda"
+				"image"			"demez\menu\button_quests_pda_trans"
+				// tf2_folder_icon
 
 				"proportionaltoparent"	"1"
 				"mouseinputenabled"	"0"
