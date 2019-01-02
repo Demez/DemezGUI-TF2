@@ -6,13 +6,17 @@ Might also be a mess since I don't really know what Im doing
 
 Current Stuff Done:
  - Modifed DemoUI
+ - Main Menu Changes
+ - Matchmaking Dashboard Changes
  
-Planned Stuff:
- - Main Menu Changes (still working on design before i make it)
+Currently Working On:
+ - Side Panel For Finding a Game
  - Simple HUD that doesnt take too much of the screen, looks nice, and gives all the info you need easily (barely started)
+Planned Stuff:
+
  - other more specific crap idk
  
-I should some images so for the design plans here, but ill do that later in 400 years.
+I should show some images of current progress here, but ill do that later in 400 years.
 
 
 I recommend using TortoiseGit if you want to easily keep this up to date
