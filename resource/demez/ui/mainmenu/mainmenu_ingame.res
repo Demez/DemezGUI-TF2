@@ -1,0 +1,282 @@
+"Resource/UI/MainMenuOverride.res"
+{
+	// command comes from GameMenu.res
+
+	"ReportPlayerButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ReportPlayerButton"
+		"xpos"			"rs4-176"
+		"ypos"			"0"
+		"zpos"			"10012"
+		"wide"			"24"
+		"tall"			"24"
+		"visible"		"1"
+
+		"navLeft"		"ResumeGameButton"
+		"navRight"		"CallVoteButton"
+		"navDown"		"QuickplayChangeButton"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"100"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"RoundedCorners"			"0"
+			"paintbackground"			"1"
+			"paintborder"				"0"
+			
+			"defaultBgColor_override" 	"128 128 128 0"
+			"armedBgColor_override" 	"128 128 128 160"
+			"depressedBgColor_override" "128 128 128 96"
+
+			"proportionaltoparent"	"1"
+			
+			"image_drawcolor"			"235 226 202 255"
+			"image_armedcolor"			"255 255 255 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"o1"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"glyph_create"
+				"scaleImage"	"1"
+				"proportionaltoparent"	"1"
+			}				
+		}
+	}
+
+	"CallVoteButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CallVoteButton"
+		"xpos"			"rs3-176"
+		"ypos"			"0"
+		"zpos"			"10012"
+		"wide"			"24"
+		"tall"			"24"
+		"visible"		"1"
+
+		"navLeft"		"ReportPlayerButton"
+		"navDown"		"QuickplayChangeButton"
+		"navRight"		"MutePlayersButton"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"100"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"0"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"RoundedCorners"			"0"
+			"paintbackground"			"1"
+			"paintborder"				"0"
+			
+			"defaultBgColor_override" 	"128 128 128 0"
+			"armedBgColor_override" 	"128 128 128 160"
+			"depressedBgColor_override" "128 128 128 96"
+			
+			"image_drawcolor"			"235 226 202 255"
+			"image_armedcolor"			"255 255 255 255"
+			"proportionaltoparent"	"1"
+			
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"o1"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"glyph_create"
+				"scaleImage"	"1"
+				"proportionaltoparent"	"1"
+			}				
+		}
+	}
+	"MutePlayersButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"MutePlayersButton"
+		"xpos"			"rs2-176"
+		"ypos"			"0"
+		"zpos"			"10012"
+		"wide"			"24"
+		"tall"			"24"
+		"visible"		"1"
+
+		"navLeft"		"CallVoteButton"
+		"navDown"		"QuickplayChangeButton"
+		"navRight"		"RequestCoachButton"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"p1"
+			"tall"			"24"
+			"autoResize"	"0"
+			//"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"100"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"RoundedCorners"			"0"
+			"paintbackground"			"1"
+			"paintborder"				"0"
+			
+			"defaultBgColor_override" 	"128 128 128 0"
+			"armedBgColor_override" 	"128 128 128 160"
+			"depressedBgColor_override" "128 128 128 96"
+			
+			"image_drawcolor"			"235 226 202 255"
+			"image_armedcolor"			"255 255 255 255"
+			"proportionaltoparent"	"1"
+			
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"o1"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"glyph_create"
+				"scaleImage"	"1"
+				"proportionaltoparent"	"1"
+			}				
+		}
+	}
+
+	"RequestCoachButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"RequestCoachButton"
+		"xpos"			"rs1-177"
+		"ypos"			"0"
+		"zpos"			"10012"
+		"wide"			"24"
+		"tall"			"24"
+		"visible"		"1"
+
+		"navLeft"		"MutePlayersButton"
+		"navRight"		"Notifications_ShowButtonPanel"
+		"navDown"		"QuickplayChangeButton"
+		"navToRelay"	"SubButton"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f"
+			"tall"			"24"
+			"autoResize"	"0"
+			//"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"100"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"RoundedCorners"			"0"
+			"paintbackground"			"1"
+			"paintborder"				"0"
+			
+			"defaultBgColor_override" 	"128 128 128 0"
+			"armedBgColor_override" 	"128 128 128 96"
+			"depressedBgColor_override" "64 64 64 96"
+			
+			"border"					""
+			"border_default"			""
+			
+			"image_drawcolor"			"235 226 202 255"
+			"image_armedcolor"			"255 255 255 255"
+			"proportionaltoparent"		"1"
+			
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"o1"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"icon_whistle"
+				"scaleImage"	"1"
+				"proportionaltoparent"	"1"
+			}				
+		}
+	}
+}

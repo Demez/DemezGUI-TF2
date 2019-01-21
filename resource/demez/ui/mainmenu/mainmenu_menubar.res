@@ -22,7 +22,7 @@
 		"ypos"					"24"
 		"zpos"					"-1"
 		"wide"					"48"
-		"tall"					"f96" //"f48"
+		"tall"					"f48" //"f48"
 		"visible"				"1"
 		"paintbackground"			"1"
 		"bgcolor_override"		"128 128 128 64"
@@ -34,10 +34,10 @@
 		"ControlName"				"EditablePanel"
 		"fieldName"				"MenuBar_Background_Dark"
 		"xpos"					"0"
-		"ypos"					"r72" //"r24"
+		"ypos"					"rs1" //"r24"
 		"zpos"					"-1"
 		"wide"					"48"
-		"tall"					"72" //"24"
+		"tall"					"24" //"24"
 		"visible"				"1"
 		"paintbackground"			"1"
 		"bgcolor_override"		"64 64 64 64"
@@ -223,8 +223,8 @@
 	{
 		"ControlName"			"ImagePanel"
 		"fieldName"			"StoreHasNewItemsImage"
-		"xpos"				"30" //"30" //"c-85"
-		"ypos"				"c-30"
+		"xpos"				"30"
+		"ypos"				"160"
 		"zpos"				"13"
 		"wide"				"o1.0" //"32"
 		"tall"				"32" //"32"
@@ -311,7 +311,7 @@
 		"dulltext"				"0"
 		"brighttext"				"0"
 		"default"				"1"
-		"command"				"engine demoui"
+		"command"				"engine demoui;demoui2"
 		//"labeltext"				"DemoUI"
 		"labeltext"				"Dem"
 		"sound_depressed"			"UI/buttonclick.wav"
@@ -513,6 +513,62 @@
 		}				
 	}	
 	
+	// move this to bar
+	"MenuBar_WorkshopButton"
+	{
+		"ControlName"				"CExImageButton"
+		"fieldName"					"MenuBar_WorkshopButton"
+		"xpos"						"0"
+		"ypos"						"408"
+		"wide"						"o1.0"
+		"tall"						"48"
+		"autoResize"				"0"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+		"tabPosition"				"0"
+		"labelText"					""
+		"font"						"HudFontSmallBold"
+		"textAlignment"				"center"
+		"dulltext"					"0"
+		"brighttext"				"0"
+		"default"					"1"
+		"Command"					"engine OpenSteamWorkshopDialog"
+
+		"navUp"						"VRModeButton"
+		"navLeft"					"AchievementsButton"
+		"navRight"					"CoachPlayersButton"
+
+		"sound_depressed"			"UI/buttonclick.wav"
+		"sound_released"			"UI/buttonclickrelease.wav"
+		//"border_default"			"MainMenuSubButtonBorder"
+		
+		"RoundedCorners"			"0"
+		
+		"defaultBgColor_override" 	"64 64 64 0"
+		"armedBgColor_override" 	"64 64 64 0"
+			
+		"image_drawcolor"			"235 226 202"
+		"image_armedcolor"			"255 255 255"
+		
+		"SubImage"
+		{
+			"ControlName"			"ImagePanel"
+			"fieldName"				"SubImage"
+			"xpos"					"cs-0.5"
+			"ypos"					"cs-0.5"
+			"zpos"					"1"
+			"wide"					"o1.0"
+			"tall"					"24"
+			"visible"				"1"
+			"enabled"				"1"
+			"scaleImage"			"1"
+			"proportionaltoparent"	"1"
+			"scaleImage"			"1"
+			"image"					"glyph_steamworkshop"
+		}				
+	}
+	
 	// --------------------------
 	// small buttons
 	"MenuBar_CommentaryButton"
@@ -567,62 +623,6 @@
 			"proportionaltoparent"	"1"
 			"scaleImage"			"1"
 			"image"				"glyph_forums"
-		}				
-	}
-	
-	// move this to bar
-	"MenuBar_WorkshopButton"
-	{
-		"ControlName"				"CExImageButton"
-		"fieldName"				"MenuBar_WorkshopButton"
-		"xpos"					"24"
-		"ypos"					"456"
-		"wide"					"o1.0"
-		"tall"					"24"
-		"autoResize"				"0"
-		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"0"
-		"tabPosition"				"0"
-		"labelText"				""
-		"font"					"HudFontSmallBold"
-		"textAlignment"			"center"
-		"dulltext"				"0"
-		"brighttext"				"0"
-		"default"				"1"
-		"Command"				"engine OpenSteamWorkshopDialog"
-
-		"navUp"					"VRModeButton"
-		"navLeft"				"AchievementsButton"
-		"navRight"				"CoachPlayersButton"
-
-		"sound_depressed"			"UI/buttonclick.wav"
-		"sound_released"			"UI/buttonclickrelease.wav"
-		//"border_default"			"MainMenuSubButtonBorder"
-		
-		"RoundedCorners"			"0"
-		
-		"defaultBgColor_override" 	"64 64 64 0"
-		"armedBgColor_override" 	"64 64 64 0"
-			
-		"image_drawcolor"			"235 226 202"
-		"image_armedcolor"		"255 255 255"
-		
-		"SubImage"
-		{
-			"ControlName"			"ImagePanel"
-			"fieldName"			"SubImage"
-			"xpos"				"cs-0.5"
-			"ypos"				"cs-0.5"
-			"zpos"				"1"
-			"wide"				"o1.0"
-			"tall"				"12"
-			"visible"			"1"
-			"enabled"			"1"
-			"scaleImage"			"1"
-			"proportionaltoparent"	"1"
-			"scaleImage"			"1"
-			"image"				"glyph_steamworkshop"
 		}				
 	}	
 	

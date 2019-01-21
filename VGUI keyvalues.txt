@@ -5,7 +5,7 @@ Shared keyvalues for controls
 "ControlName"				The Type of Control this is
 "fieldName"					What is shown in VGUI Draw Tree?
 
-You can put these lines at the end of some controls for what it will be when min mode is enabled
+You can put these lines at the end of some controls for what it will be when they are enabled
 _minmode, _lodef, _hidef
 
 "xpos" 						(Down - Up) 				Sets the position of the control along the X axis 
@@ -30,12 +30,16 @@ _minmode, _lodef, _hidef
 "font_hidef"				"font name"
 "font_lodef"				"font name"
 
-"textAlignment"				"west, north-west, north, center, north-east, east, south-east, south, south-west"
+"textAlignment"				"west, north-west, north, center, north-east, east, south-east, south, south-west" apparently Left as well
+"textinsetx"				"x units"					How many units far the text will be from the side along the X axis
+"textinsety"				"y units"					How many units far the text will be from the side along the Y axis
+
 "wrap"						(boolean)					Whether to have the text wrap when it hits the side. NOTE: when this is on, text alignment doesnt work
 
 // this looks like ass
 "tooltiptext"				(text)						When you hover your mouse over something with this keyvalue, this shows up. NOT the one TF2 uses though.
 
+// only on ImagePanel?
 "rotation"					(0, 1, 2, 3)
 
 "RoundedCorners"			(0, 1, 5, 15) 					Whether to have sharp corners (0) or rounded corners 
@@ -47,7 +51,7 @@ _minmode, _lodef, _hidef
 
 // Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead
 ---------------------------------------------
-"bgcolor_override"
+"bgcolor_override"	
 "fgcolor_override"			This Generally controls the color of any text value
 
 "image_drawcolor"	"117 107 94 255"
@@ -60,6 +64,7 @@ _minmode, _lodef, _hidef
 "paintborder"				"1"
 "border"					"MainMenuBGBorder"
 
+"auto_wide_tocontents"		(boolean)					Whether the control size will auto adjust to the size of the content inside
 
 // not entirely sure what these do, maybe for not using the mouse to navigate?
 "navUp"				Name of any Control Above
@@ -71,14 +76,24 @@ _minmode, _lodef, _hidef
 // idk yet
 "autoResize"	"0"
 "pinCorner"		"3"
+"pin_to_sibling" 	"TargetNameLabel"
+"pin_corner_to_sibling" "PIN_TOPLEFT"
+"pin_to_sibling_corner" "PIN_TOPLEFT"
 "tabPosition"	"0"
-"textinsetx"	"25"
 "use_proportional_insets" "1"
 "dulltext"		"0"
 "brighttext"	"0"
 "default"		"1"
 "TFFont"					"HudFontSmall"
 "TextColor"					"HudOffWhite"
+"x_offset"		"40"
+"x_offset_minmode"		"0"
+"MeterFG"		"White"
+"MeterBG"		"Gray"
+"textAlignment_minmode"			"west"
+
+
+
 
 
 ===========================================
@@ -130,7 +145,7 @@ Fonts Only
 		"antialias" 		"1"
 		"yres"				"480 599"
 		"underline"			"1"
-		"outline"			"1"
+		"outline"			"1"				Dont use this, looks like ass because its not affected by antialias
 		"dropshadow"		"1"
 		"blur"        		"1"
 		

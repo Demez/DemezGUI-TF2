@@ -241,7 +241,7 @@
 			"xpos"					"cs-0.5"
 			"ypos"					"-24" //"-50"
 			"zpos"					"111"
-			"wide"					"170" //"256"
+			"wide"					"204" //"256"
 			"tall"					"f8"
 			"visible"				"1"
 			"proportionaltoparent"		"1"
@@ -454,7 +454,8 @@
 			"ypos"				"-48"
 			"zpos"				"110"
 			"wide"				"208"
-			"tall"				"24"
+			"tall"				"f"
+			"enabled"			"1"
 			"visible"			"1"
 			"proportionaltoparent"	"1"
 
@@ -482,7 +483,7 @@
 				"wide"				"f16"
 				"zpos"				"100"
 				"inset_x"			"8"
-				"tall"				"f0"
+				"tall"				"24"
 				"visible"			"1"
 				"enabled"			"1"
 				"font"				"HudFontSmallestBold"
@@ -492,16 +493,17 @@
 				"proportionaltoparent"	"1"
 				"mouseinputenabled"	"0"
 			}		
-
+			
+			// Replace this with an icon
 			"JoinNowButton"
 			{
 				"ControlName"	"CExButton"
 				"fieldName"		"JoinNowButton"
-				"xpos"			"rs1-2" //"rs1-10"
-				"ypos"			"rs1-2" //"rs1-9"
-				"wide"			"40"
+				"xpos"			"rs1" //"rs1-10"
+				"ypos"			"0" //"rs1-9"
+				"wide"			"48"
 				"zpos"			"100"
-				"tall"			"16"
+				"tall"			"24"
 
 				if_queued
 				{
@@ -527,8 +529,10 @@
 				
 				"RoundedCorners"			"0"
 
-				"armedBgColor_override"		"CreditsGreen"
-				"defaultBgColor_override"	"SaleGreen"
+				//"armedBgColor_override"		"CreditsGreen"
+				"armedBgColor_override"		"96 96 96 64"
+				//"defaultBgColor_override"		"SaleGreen"
+				"defaultBgColor_override"		"0 0 0 0"
 
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
@@ -667,7 +671,7 @@
 			"xpos"						"also doesnt matter" //"rs1-31-131"
 			"ypos"						"0"
 			"zpos"						"100"
-			"wide"						"96"
+			"wide"						"32"
 			"tall"						"24"
 			"autoResize"				"0"
 			"pinCorner"					"0"

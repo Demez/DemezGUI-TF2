@@ -1,11 +1,26 @@
 NOTE: move this stuff into a wiki on github, and maybe put it into the valve dev wiki as well
 
+----------------
+Universal:
+----------------
+EditablePanel
+ImagePanel
+
+ToggleButton
+Label
+
+
+----------------
+TF2 Only:
+----------------
 CExLabel
 CExImageButton
 CExButton
 
-EditablePanel
-ImagePanel
+
+
+
+ContinuousProgressBar
 
 Label
 

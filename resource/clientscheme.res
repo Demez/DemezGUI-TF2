@@ -119,12 +119,16 @@ Scheme
 		// training
 		"HudTrainingHint"			"212 160 23 255"
 		
-		"TanDark"				"117 107 94 255"
-		"TanLight"				"235 226 202 255"
-		"TanDarker"				"46 43 42 255"
+		"TanDark"					"117 107 94 255"
+		"TanLight"					"235 226 202 255"
+		"TanDarker"					"46 43 42 255"
 		
-		"StoreDarkTan"			"131 121 104 255"
-		"StoreGreen"			"76 107 34 255"
+		"TanDark128"				"117 107 94 128"
+		"TanLight128"				"235 226 202 128"
+		"TanDarker128"				"46 43 42 128"
+		
+		"StoreDarkTan"				"131 121 104 255"
+		"StoreGreen"				"76 107 34 255"
 		
 		// Building HUD Specific
 		"LowHealthRed"		"255 0 0 255"
@@ -503,8 +507,8 @@ Scheme
 				//"tall_hidef"	"64"
 				//"tall_lodef"	"64"
 				
-				// this doesnt seem to do anything
-				"weight"		"1" //"500"
+				// this just makes it wider it seems
+				"weight"		"500"
 				"additive"		"0"
 				
 				//"outline"		"4"
@@ -523,7 +527,7 @@ Scheme
 				"tall"			"32"
 				//"tall_hidef"	"32"
 				//"tall_lodef"	"32"
-				"weight"		"1"
+				"weight"		"500"
 				"additive"		"0"
 				"antialias"		"1"
 			}
@@ -533,9 +537,10 @@ Scheme
 			"1"
 			{
 				"name"			"TF2 Build"
-				"tall"			"66"
+				// why cant i make this bigger than 64?
+				"tall"			"64"
 				// width?
-				"weight"		"3000"
+				"weight"		"500"
 				// height?
 				"additive"		"0"
 				
@@ -555,7 +560,7 @@ Scheme
 				"tall"			"32"
 				//"tall_hidef"	"32"
 				//"tall_lodef"	"32"
-				"weight"		"6000"
+				"weight"		"500"
 				// idk what this does
 				"additive"		"0"
 				//"yres"			"100 110"
