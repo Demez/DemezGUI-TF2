@@ -4,78 +4,53 @@
 	"HudPlayerHealth"
 	{
 		"ControlName"					"EditablePanel"
-		"fieldName"					"HudPlayerHealth"
-		"xpos"						"0"
-		"ypos"						"rs1"
-		"zpos"						"2"
-		"wide"						"304"
-		"wide_minmode"				"232"
-		"tall"						"96"
-		"tall_minmode"				"64"
-		"visible"					"1"
-		"enabled"					"1"	
-		"HealthBonusPosAdj"			"0.33"
-		"HealthDeathWarning"		"0.33"
-		"HealthDeathWarningColor"	"HUDDeathWarning"
+		"fieldName"						"HudPlayerHealth"
+		"xpos"							"0"
+		"ypos"							"rs1"
+		"zpos"							"2"
+		"wide"							"304"
+		//"wide_minmode"					"232"
+		"tall"							"128"
+		//"tall_minmode"					"96"
+		"visible"						"1"
+		"enabled"						"1"	
+		// raise hp pos to increase this size
+		"HealthBonusPosAdj"				"28" // Size to grow the bonus image by
+		"HealthBonusPosAdj_minmode"		"28" // Size to grow the bonus image by
+		"HealthDeathWarning"			"0.49" // Percentage of Health left before showing the Bonus Image for Low HP
+		"HealthDeathWarningColor"		"HUDDeathWarning"
 	}	
 	
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"				"ImagePanel"
 		"fieldName"					"PlayerStatusHealthImage"
-		"xpos"						"88"
-		"xpos_minmode"				"72"
-		"ypos"						"24"
-		"zpos"						"3"
-		"wide"						"o1"
-		"tall"						"48"
-		"tall_minmode"				"32"
+		"xpos"						"92"
+		//"xpos_minmode"				"74" //"72"
+		"ypos"						"rs1-16"
+		"zpos"						"5"
+		"wide"						"48"
+		"tall"						"o1"
+		//"tall_minmode"				"32"
 		"visible"					"1"
 		"enabled"					"1"
 		"proportionaltoparent"		"1"
 		
-		"paintbackground"			"0"
-		"bgcolor_override"			"0 0 0 64"
-		
 		"image"						"../hud/health_color"
-		
-		"RoundedCorners"			"0"
-	}
-	
-	"PlayerStatusHealthImageBG"
-	{
-		"ControlName"				"ImagePanel"
-		"fieldName"					"PlayerStatusHealthImageBG"
-		"xpos"						"s-1"
-		"xpos_minmode"				"s-1"
-		"ypos"						"16"
-		"zpos"						"3"
-		"wide"						"o1"
-		"tall"						"48"
-		"visible"					"0"
-		"enabled"					"0"
-		"proportionaltoparent"		"1"
-		
-		"paintbackground"			"0"
-		"bgcolor_override"			"32 32 32 128"
-		
-		"image"						"../hud/../hud/health_over_bg"
-		"scaleImage"				"0"	
-		
-		"RoundedCorners"			"0"
 	}
 	
 	"PlayerStatusHealthBonusImage" // Low HP or Overheal
 	{
 		"ControlName"				"ImagePanel"
 		"fieldName"					"PlayerStatusHealthBonusImage"
-		"xpos"						"88"
-		"xpos_minmode"				"72"
-		"ypos"						"24"
-		"zpos"						"3"
-		"wide"						"o1"
-		"tall"						"48"
-		"tall_minmode"				"32"
+		"xpos"						"89"
+		//"xpos_minmode"				"72"
+		"ypos"						"rs1-12"
+		//"ypos_minmode"				"rs1-14"
+		"zpos"						"4"
+		"wide"						"55"
+		"tall"						"o1.025"
+		//"tall_minmode"				"36"
 		"visible"					"1"
 		"enabled"					"1"
 		"proportionaltoparent"		"1"
@@ -83,18 +58,35 @@
 		"scaleImage"				"1"	
 	}
 	
+	// Replace with a font and make transparent
+	"PlayerStatusHealthImageBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusHealthImageBG"
+		"xpos"			"89"
+		//"xpos_minmode"	"58"
+		"ypos"			"61"
+		"zpos"			"3"
+		"wide"			"o1" //"o0.9975" 
+		"tall"			"55"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/health_bg"
+		"scaleImage"	"1"	
+	}	
+	
 	"PlayerStatusHealthValue"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"PlayerStatusHealthValue"
-		"xpos"					"144"
-		"xpos_minmode"			"104"
-		"ypos"					"24"
+		"xpos"					"152"
+		//"xpos_minmode"			"118"
+		"ypos"						"rs1-16"
 		"zpos"					"5"
 		"wide"					"128"
-		"wide_minmode"			"96"
+		//"wide_minmode"			"96"
 		"tall"					"48"
-		"tall_minmode"			"32"
+		//"tall_minmode"			"32"
 		"visible"				"1"
 		"enabled"				"1"
 		"labelText"				"%Health%"
@@ -103,7 +95,7 @@
 		"textinsetx"			"16"
 		// idk how to set it to a number of this font
 		"font"					"HudClassHealth"
-		"font_minmode"			"HudClassHealth_minmode"
+		//"font_minmode"			"HudClassHealth_minmode"
 		"fgcolor"				"TanLight"
 		"proportionaltoparent"	"1"
 	}
@@ -113,14 +105,14 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"PlayerStatusHealthValue_Outline1"
-		"xpos"					"144"
-		"xpos_minmode"			"104"
-		"ypos"					"24"
+		"xpos"					"152"
+		//"xpos_minmode"			"118"
+		"ypos"						"rs1-16"
 		"zpos"					"5"
 		"wide"					"128"
-		"wide_minmode"			"96"
+		//"wide_minmode"			"96"
 		"tall"					"48"
-		"tall_minmode"			"32"
+		//"tall_minmode"			"32"
 		"visible"				"1"
 		"enabled"				"1"
 		"labelText"				"%Health%"
@@ -128,7 +120,7 @@
 		"textAlignment"			"west"	
 		"textinsetx"			"16"
 		"font"					"HudClassHealth_OutlineHack"
-		"font_minmode"			"HudClassHealth_minmode_OutlineHack"
+		//"font_minmode"			"HudClassHealth_minmode_OutlineHack"
 		"fgcolor"				"0 0 0 255" //"240 240 240 255"
 		"proportionaltoparent"	"1"
 		//"PaintBackgroundType""0"
@@ -137,14 +129,14 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"PlayerStatusHealthValue_Outline2"
-		"xpos"					"144"
-		"xpos_minmode"			"104"
-		"ypos"					"25"
+		"xpos"					"152"
+		//"xpos_minmode"			"118"
+		"ypos"						"rs1-15"
 		"zpos"					"5"
 		"wide"					"128"
-		"wide_minmode"			"96"
+		//"wide_minmode"			"96"
 		"tall"					"48"
-		"tall_minmode"			"32"
+		//"tall_minmode"			"32"
 		"visible"				"1"
 		"enabled"				"1"
 		"labelText"				"%Health%"
@@ -152,13 +144,13 @@
 		"textAlignment"			"west"	
 		"textinsetx"			"16"
 		"font"					"HudClassHealth_OutlineHack"
-		"font_minmode"			"HudClassHealth_minmode_OutlineHack"
+		//"font_minmode"			"HudClassHealth_minmode_OutlineHack"
 		"fgcolor"				"0 0 0 255" //"240 240 240 255"
 		"proportionaltoparent"	"1"
 		//"PaintBackgroundType""0"
 	}
 
-	
+// -----------------------------------------------------------------------------	
 	
 	"PlayerStatusBleedImage"
 	{
