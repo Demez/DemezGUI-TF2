@@ -17,7 +17,11 @@ Planned Stuff:
 
  - other more specific crap idk
  
-I should show some images of current progress here, but ill do that later in 400 years.
+A few images:
+https://cdn.discordapp.com/attachments/495275987538542613/543295224974278666/unknown.png
+https://cdn.discordapp.com/attachments/495275987538542613/543297878492184577/unknown.png
+https://cdn.discordapp.com/attachments/495275987538542613/543295297569161244/unknown.png
+https://cdn.discordapp.com/attachments/165946769400659968/543309508458315791/unknown.png
 
 
 I recommend using TortoiseGit if you want to easily keep this up to date,
