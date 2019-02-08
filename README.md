@@ -18,6 +18,7 @@ Planned Stuff:
  - other more specific crap idk
  
 A few images:
+
 https://cdn.discordapp.com/attachments/495275987538542613/543295224974278666/unknown.png
 https://cdn.discordapp.com/attachments/495275987538542613/543297878492184577/unknown.png
 https://cdn.discordapp.com/attachments/495275987538542613/543295297569161244/unknown.png
