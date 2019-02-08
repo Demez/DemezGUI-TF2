@@ -4,10 +4,12 @@ Once this is actually mostly finished, I plan to upload this to huds.tf
 
 Might also be a mess since I don't really know what Im doing
 
-Current Stuff Done:
+Current Stuff Done (very general):
  - Modifed DemoUI
  - Main Menu Changes
  - Matchmaking Dashboard Changes
+ - Matchmaking Panel Changes
+ - Casual Gamemode Panel Changes
  
 Currently Working On:
  - Side Panel For Finding a Game
