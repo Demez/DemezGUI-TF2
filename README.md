@@ -12,8 +12,7 @@ Current Stuff Done (very general):
  - Casual Gamemode Panel Changes
  
 Currently Working On:
- - Side Panel For Finding a Game
- - Simple HUD that doesnt take too much of the screen, looks nice, and gives all the info you need easily (barely started)
+ - Simple HUD that doesnt take too much of the screen, looks nice, and gives all the info you need easily (only health and player model is mostly done)
 Planned Stuff:
 
  - other more specific crap idk
