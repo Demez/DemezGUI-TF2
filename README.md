@@ -20,6 +20,6 @@ Planned Stuff:
 I should show some images of current progress here, but ill do that later in 400 years.
 
 
-I recommend using TortoiseGit if you want to easily keep this up to date
+I recommend using TortoiseGit if you want to easily keep this up to date,
 or you can use GitKraken if you actually don't know what your doing.
 I don't recommend using github desktop as and freezes a lot, and is too limiting (for me at least).
