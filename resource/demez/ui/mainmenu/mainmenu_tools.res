@@ -43,7 +43,7 @@
 		"sound_released"			"UI/buttonclickrelease.wav"
 		
 		// videomode reloads all files
-		"command"				"engine mat_setvideomode 1920 1080 0; mat_setvideomode 1920 1080 1;"
+		"command"				"engine vgui_cache_res_files 0;mat_setvideomode 1920 1080 0; mat_setvideomode 1920 1080 1;"
 		//"command"				"engine incrementvar mat_antialias 1 2 1"
 	}
 	
@@ -51,7 +51,7 @@
 	{
 		"ControlName"				"CExButton"
 		"fieldName"				"Tool_hud_reloadscheme"
-		"xpos"						"s9"
+		"xpos"						"s8"
 		"ypos"						"0"
 		"zpos"						"10100"
 		"wide"						"o1.0"
@@ -81,7 +81,7 @@
 	{
 		"ControlName"				"CExButton"
 		"fieldName"				"Tool_VGUI_Tree"
-		"xpos"						"s10"
+		"xpos"						"s9"
 		"ypos"						"0"
 		"zpos"						"10100"
 		"wide"						"o1.0"
@@ -112,11 +112,11 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Tool_Map_Label"
-		"xpos"						"264"
+		"xpos"						"260" //"240"
 		"ypos"						"0"
 		"zpos"						"10100"
 		"wide"						"32"
-		"tall"						"24"
+		"tall"						"12"
 		"visible"					"1"
 		"enabled"					"1"
 		"RoundedCorners"			"0"
@@ -130,8 +130,8 @@
 		"armedFgColor_override" 	"255 255 255 255"
 		
 		"textAlignment"			"center"
-		"labelText"				"Maps:"
-		//"font"					"HudFontSmallestBold"
+		"labelText"				"Maps"
+		"font"					"Default"
 		
 		"sound_depressed"			"UI/buttonclick.wav"
 		"sound_released"			"UI/buttonclickrelease.wav"
@@ -145,11 +145,11 @@
 	{
 		"ControlName"				"CExButton"
 		"fieldName"					"Tool_Test_Map_01"
-		"xpos"						"296"
-		"ypos"						"0"
+		"xpos"						"260" //"240"
+		"ypos"						"12"
 		"zpos"						"10100"
-		"wide"						"o0.5"
-		"tall"						"24"
+		"wide"						"o1"
+		"tall"						"12"
 		"visible"					"1"
 		"enabled"					"1"
 		"RoundedCorners"			"0"

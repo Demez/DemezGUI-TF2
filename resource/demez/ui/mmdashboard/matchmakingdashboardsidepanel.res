@@ -14,7 +14,8 @@
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"0"
 
-		"bgcolor_override"	"0 0 0 0" //128 alpha
+		"bgcolor_override"	"0 0 0 128" //128 alpha
+		"alpha"					"128"
 	}
 
 	"TitleGradient"
@@ -41,7 +42,7 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"CloseButton"
-		"xpos"			"r" //"rs1"
+		"xpos"			"rs1"
 		"labelText"		"" //">"
 
 		if_left
@@ -52,7 +53,7 @@
 
 		"ypos"						"0"
 		"zpos"						"10000"
-		"wide"						"8"
+		"wide"						"6"
 		"tall"						"f0"
 		"visible"					"1"
 		"proportionaltoparent"		"1"
@@ -113,6 +114,6 @@
 		
 		"paintbackground"		"1"
 		//"bgcolor_override"		"32 32 32 232"
-		"bgcolor_override"		"32 32 32 192"
+		"bgcolor_override"		"40 40 40 224"
 	}
 }

@@ -218,7 +218,7 @@
 		}				
 	}
 	
-	// this looks very bad, change this to text along the top soon
+	// this looks very bad, change this to text ("!") on the side soon
 	"StoreHasNewItemsImage"
 	{
 		"ControlName"			"ImagePanel"
@@ -640,8 +640,10 @@
 		"enabled"				"1"
 		"tabPosition"				"0"
 		"labelText"				"MIN"
-		//"font"					"HudFontSmallBold"
-		"textAlignment"			"center"
+		"labelText_minmode"		"MAX"
+		"font"					"DefaultSmallest"
+		"textAlignment"			"south"
+		"textinsety"			"-8"
 		
 		"dulltext"				"0"
 		"brighttext"				"0"
@@ -672,7 +674,7 @@
 			"ControlName"			"ImagePanel"
 			"fieldName"			"SubImage"
 			"xpos"				"cs-0.5"
-			"ypos"				"cs-0.5"
+			"ypos"				"s0.25"
 			"zpos"				"1"
 			"wide"				"o1.0"
 			"tall"				"12"
@@ -681,7 +683,8 @@
 			"scaleImage"			"1"
 			"proportionaltoparent"	"1"
 			"scaleImage"			"1"
-			//"image_minmode"				"accept_button"
+			"image"					"glyph_expand"
+			"image_minmode"			"glyph_collapse"
 		}				
 	}
 	

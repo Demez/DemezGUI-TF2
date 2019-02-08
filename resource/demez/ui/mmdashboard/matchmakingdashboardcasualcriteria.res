@@ -21,13 +21,13 @@
 		"xpos"						"8"
 		"ypos"						"8"
 		"zpos"						"99"
-		"wide"						"f16"
+		"wide"						"f160"
 		"tall"						"24"
 		"proportionaltoparent"		"1"
 		"labeltext"					"#TF_Matchmaking_HeaderCasual"
 		"textAlignment"				"center"
 		"font"						"HudFontMediumBigBold"
-		"fgcolor_override"			"TanDark"
+		"fgcolor_override"			"TanLight"
 		
 		"mouseinputenabled"			"0"
 	}
@@ -36,11 +36,13 @@
 	{
 		"ControlName"	"CCasualCriteriaPanel"
 		"fieldName"		"criteria"
-		"xpos"			"-3"
-		"ypos"			"40"
+		"xpos"			"0" //"-3"
+		//"ypos"			"40"
+		"ypos"			"0"
 		"zpos"			"100"
 		"wide"			"f0"
-		"tall"			"f73"
+		//"tall"			"f64"
+		"tall"			"f24"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 	}
@@ -67,10 +69,10 @@
 		"ControlName"	"CExButton"
 		"fieldName"		"QueueButton"
 		"xpos"			"cs-0.5"
-		"ypos"			"rs1-8"
-		"zpos"			"100"
-		"wide"			"f20"
-		"tall"			"20"
+		"ypos"			"rs1"
+		"zpos"			"10001" // be above the close button
+		"wide"			"f"
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -86,11 +88,12 @@
 		"mouseinputenabled"	"1"
 		"keyboardinputenabled"	"0"
 		"actionsignallevel"	"1"
+		"RoundedCorners"			"0"
 
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 
-		"armedBgColor_override"		"CreditsGreen"
-		"defaultBgColor_override"	"GreenSolid"
+		"armedBgColor_override"		"96 255 96 32"
+		"defaultBgColor_override"	"0 0 0 0"
 	}
 }

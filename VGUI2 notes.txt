@@ -9,3 +9,4 @@ VGUI2 useful commands
 vgui_drawtree 1
 hud_reloadscheme (only reloads ingame, why valve)
 showschemevisualizer
+vgui_cache_res_files 0 (need to turn off to reload ui ingame)

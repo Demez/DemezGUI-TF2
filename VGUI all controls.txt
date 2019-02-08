@@ -1,5 +1,7 @@
 NOTE: move this stuff into a wiki on github, and maybe put it into the valve dev wiki as well
 
+#base "../demez/ui/mainmenu/mainmenu_ingame.res"
+
 ----------------
 Universal:
 ----------------

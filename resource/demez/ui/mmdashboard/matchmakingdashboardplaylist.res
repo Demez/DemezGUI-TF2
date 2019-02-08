@@ -18,16 +18,16 @@
 	{
 		"ControlName"		"Label"
 		"fieldName"		"Title"
-		"xpos"		"8"
-		"ypos"		"20"
+		"xpos"		"0"
+		"ypos"		"8"
 		"zpos"		"99"
 		"wide"		"f0"
-		"tall"		"20"
+		"tall"		"32"
 		"proportionaltoparent"	"1"
 		"labeltext"		"#TF_Matchmaking_HeaderModeSelect"
-		"textAlignment"	"west"
+		"textAlignment"	"center"
 		"font"			"HudFontMediumBigBold"
-		"fgcolor_override"	"TanDark"
+		"fgcolor_override"	"TanLight"
 		
 		"mouseinputenabled"	"0"
 	}
@@ -37,27 +37,11 @@
 	//	"ControlName"	"CTFPlaylistPanel"
 		"fieldName"		"playlist"
 		"xpos"			"8"
-		"ypos"			"50"
+		"ypos"			"48"
 		"zpos"			"100"
-		"wide"			"255"
-		"tall"			"365"
+		"wide"			"f16"
+		"tall"			"f56" //"365"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
-	}
-
-	"PlayListDropShadow"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"PlayListDropShadow"
-		"xpos"			"8"
-		"ypos"			"50"
-		"zpos"			"1000"
-		"wide"			"255"
-		"tall"			"298"
-		"visible"		"0"
-		"PaintBackgroundType"	"2"
-		"border"		"InnerShadowBorder"
-		"proportionaltoparent"	"1"
-		"mouseinputenabled"	"0"
 	}
 }

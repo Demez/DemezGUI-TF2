@@ -224,8 +224,10 @@
 				"visible"	"0"
 			}
 		}
-
-		"DescLine1"
+		
+		// Casual or Comp on Main Menu
+		// Level on Casual Dashboard
+		"DescLine1" 
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine1"
@@ -244,7 +246,7 @@
 
 			if_mini
 			{
-				"xpos"	"67"
+				"xpos"	"0" //"67"
 				"ypos"	"4"
 			}
 
@@ -256,7 +258,7 @@
 			}
 		}
 
-		"DescLine2"
+		"DescLine2" // Current Level on Main Menu
 		{
 			"ControlName"			"CAutoFittingLabel"
 			"fieldName"			"DescLine2"

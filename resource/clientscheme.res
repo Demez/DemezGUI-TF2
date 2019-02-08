@@ -77,6 +77,8 @@ Scheme
 		//"Black"				"0 0 0 255"
 		//Changed black to a NTSC safe color
 		"GreenSolid"		 "76 107 34 255"
+		"GreenSolid_128"     "76 107 34 128"
+		"GreenSolid_64"      "76 107 34 64"
 		
 		"Black"				"46 43 42 255"
 		"TransparentBlack"	"0 0 0 196"
@@ -95,6 +97,8 @@ Scheme
 		"ProgressBarBlue"	"91 122 142 255"
 		
 		"CreditsGreen"		"94 150 49 255"
+		"CreditsGreen_128"	"94 150 49 128"
+		"CreditsGreen_64"	"94 150 49 64"
 		
 		"Gray"				"178 178 178 255"
 
@@ -1159,6 +1163,17 @@ Scheme
 				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
+			}
+		}
+		"HudFontSmallestPlus"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"9"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" 	"1"
 			}
 		}
 		"PerformanceModeSmall"

@@ -37,7 +37,8 @@ _minmode, _lodef, _hidef
 "wrap"						(boolean)					Whether to have the text wrap when it hits the side. NOTE: when this is on, text alignment doesnt work
 
 // this looks like ass
-"tooltiptext"				(text)						When you hover your mouse over something with this keyvalue, this shows up. NOT the one TF2 uses though.
+"tooltiptext"				(text)						When you hover your mouse over something with this keyvalue, this shows up. NOT the one TF2 uses though (i think)
+"disabled_tooltiptext"		(text)				Same as above, shows if the control is disabled
 
 // only on ImagePanel?
 "rotation"					(0, 1, 2, 3)
@@ -48,6 +49,9 @@ _minmode, _lodef, _hidef
 
 "mouseinputenabled"			(boolean)					Whether to take control of the mouse when hovered over, or to ignore it, useful when this is an overlay
 "keyboardinputenabled"?		(boolean)					Whether to take control of the keyboard or to ignore it
+
+"button_activation_type"	"0" // when 1, it activates on pressed, otherwise you need to release it
+"stay_armed_on_click"	"1"
 
 // Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead
 ---------------------------------------------
@@ -99,7 +103,7 @@ _minmode, _lodef, _hidef
 ===========================================
 Button keyvalues
 ===========================================
-"keyvalue"		you can use "engine" in this keyvalue to enter a command in the console, only works on the menu screen though
+"command"		you can use "engine" in this keyvalue to enter a command in the console, only works on the menu screen though
 
 
 // Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead

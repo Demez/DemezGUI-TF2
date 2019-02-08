@@ -1,3 +1,9 @@
+// no description
+#base "mainmenuplaylistentry_nodesc.res"
+
+// description
+//#base "mainmenuplaylistentry_desc.res"
+
 "Resource/UI/MainMenuPlayListEntry.res"
 {
 	"ModeImage"
@@ -15,23 +21,7 @@
 		"proportionaltoparent"	"1"
 		"image"			""
 	}
-
-	"PlayListDropShadow"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"PlayListDropShadow"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"1000"
-		"wide"			"f0"
-		"tall"			"f0"
-		"visible"		"1"
-		"PaintBackgroundType"	"2"
-		"border"		"InnerShadowBorderThin"
-		"proportionaltoparent"	"1"
-		"mouseinputenabled"	"0"
-	}
-
+	
 	"BGColor"
 	{
 		"ControlName"	"EditablePanel"
@@ -81,42 +71,7 @@
 		"showtooltipswhenmousedisabled"	"1"
 		"proportionaltoparent" "1"
 	}
-
-	"ModeButton"
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"ModeButton"
-		"xpos"			"rs1-6"
-		"ypos"			"2"
-		"zpos"			"6"
-		"wide"			"122"
-		"tall"			"15"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"%button_token%"
-		"textinsetx"	"4"
-		"use_proportional_insets" "1"
-		"font"			"HudFontSmallestBold"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"command"		"%button_command%"
-		"proportionaltoparent" "1"
-		"actionsignallevel"	"2"
-
-		//"border_default"	"MainMenuMiniButtonDefault"
-		//"border_armed"		"MainMenuMiniButtonArmed"
-		"paintbackground"	"1"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-
-		"defaultFgColor_override"	"TanLight"
-		"armedFgColor_override"		"TanLight"
-		"depressedFgColor_override" "TanLight"
-	}	
-
+	
 	"MatchmakingBanPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -153,95 +108,5 @@
 
 			"paintbackground"	"0"
 		}
-	}
-
-	"DescLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"DescLabel"
-		"font"			"MMenuPlayListDesc"
-		"labelText"		"%desc_token%"
-		"textAlignment"	"north-west"
-		"xpos"			"rs1"
-		"ypos"			"18"
-		"zpos"			"2"
-		"wide"			"125"
-		"tall"			"40"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"1"
-		"fgcolor_override" "TanLight"
-		"proportionaltoparent" "1"
-		"mouseinputenabled"	"0"
-	}
-
-	"DescLabelShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"DescLabelShadow"
-		"font"			"MMenuPlayListDesc"
-		"labelText"		"%desc_token%"
-		"textAlignment"	"north-west"
-		"xpos"			"rs1+1"
-		"ypos"			"19"
-		"zpos"			"1"
-		"wide"			"125"
-		"tall"			"40"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"1"
-		"fgcolor_override" "Black"
-		"proportionaltoparent" "1"
-		"mouseinputenabled"	"0"
-	}
-	
-	"DisabledIcon"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"DisabledIcon"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"				"49"
-		"wide"				"f0"
-		"tall"				"f0"
-		"visible"			"0"
-		"enabled"			"1"
-		"actionsignallevel"	"1"
-		"command"			"comp_access_info"
-		"labeltext"			""
-		"eatmouseinput"	"0"	
-		"button_activation_type"	"1"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-				
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
-		"defaultBgColor_override" "0 0 0 0"
-		"armedBgColor_override" "0 0 0 0"
-		"depressedBgColor_override" "0 0 0 0"
-				
-		"image_drawcolor"	"235 226 202 255"
-		"image_armedcolor"	"235 140 140 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"233"
-			"ypos"			"2"
-			"zpos"			"1"
-			"wide"			"15"
-			"tall"			"15"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"locked_icon"
-			"scaleImage"	"1"
-			"proportionaltoparent" "1"
-		}	
 	}
 }
