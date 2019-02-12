@@ -470,11 +470,11 @@ Scheme
 		"ProgressBarFg"			"255 30 13 255"
 
 		// Top-left corner of the menu on the main screen
-		"Main.Menu.X"		"32"
+		"Main.Menu.X"		"0" //"32"
 		"Main.Menu.Y"		"248"
 
 		// Blank space to leave beneath the menu on the main screen
-		"Main.BottomBorder"	"32"
+		"Main.BottomBorder"	"0" //"32"
 		
 		"VguiScreenCursor"			"255 208 64 255"
 	}

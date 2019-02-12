@@ -565,6 +565,24 @@
 		"navRight"		"Notifications_Panel"
 		"navToRelay"	"Notifications_ShowButtonPanel_SB"
 		
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"cs-0.5"
+			"ypos"			"cs-0.5"
+			"zpos"			"1"
+			"wide"			"o1.0"
+			"tall"			"16"
+			"visible"		"1"
+			"enabled"		"1"
+			//"image"			"button_Alert"
+			"image"			"glyph_expand"
+			"scaleImage"	"1"
+			"proportionaltoparent"	"1"
+			"mouseinputenabled"		"0"
+		}
+		
 		"Notifications_CountLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -586,6 +604,7 @@
 			"proportionaltoparent"	"1"
 			"RoundedCorners"			"0"
 			"mouseinputenabled"		"0"
+			"textinsetx"			"16"
 		}
 	
 		"Notifications_ShowButtonPanel_SB"
@@ -626,8 +645,8 @@
 		
 			//"defaultBgColor_override" 	"160 160 160 128"
 			//"armedBgColor_override" 	"192 192 192 128"
-			"defaultBgColor_override" 	"255 160 0 64"
-			"armedBgColor_override" 	"255 160 0 128"
+			"defaultBgColor_override" 	"255 136 0 160"
+			"armedBgColor_override" 	"255 136 0 224"
 			
 			"image_drawcolor"	"235 226 202 255"
 			"image_armedcolor"	"255 255 255 255"
@@ -651,19 +670,19 @@
 		}
 	}
 	
-	"Notifications_Panel"
+	"Notifications_Panel" // ---------------------
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_Panel"
 		"xpos"			"288"
-		"ypos"			"48"
+		"ypos"			"24"
 		"zpos"			"10"
 		"wide"			"f432"
-		"tall"			"80"
+		"tall"			"64"
 		"visible"		"1"
 		"paintbackground"	"1"
 		
-		"bgColor_override"    "200 120 0 160"
+		"bgColor_override"      "255 136 0 160"
 
 		"navUp"			"MOTD_ShowButtonPanel"
 		"navDown"		"SettingsButton"
@@ -671,15 +690,16 @@
 		"navRight"		"MOTD_ShowButtonPanel"
 		"navToRelay"	"Notifications_CloseButton"
 		
+		// make an arrow
 		"Notifications_CloseButton"
 		{
 			"ControlName"	"CExImageButton"
 			"fieldName"		"Notifications_CloseButton"
-			"xpos"			"r22"
-			"ypos"			"8"
+			"xpos"			"0"
+			"ypos"			"0"
 			"zpos"			"10"
-			"wide"			"14"
-			"tall"			"14"
+			"wide"			"f"
+			"tall"			"24"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -700,27 +720,36 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 
-			"paintbackground"	"0"
+			"paintbackground"	"1"
+			"RoundedCorners"	"0"
+			
+			"stay_armed_on_click"	"0"
+			
+			"defaultBgColor_override" 		"0 0 0 0"
+			"armedBgColor_override" 		"255 136 0 224"
+			"depressedBgColor_override"     "46 43 42 255"
 			
 			"defaultFgColor_override"       "64 64 64 255"
 			"armedFgColor_override"         "128 128 128 255"
 			"depressedFgColor_override"     "46 43 42 255"
 			
-			"image_drawcolor"	"80 80 80 255" //"117 107 94 255"
-			"image_armedcolor"	"112 112 112 255" //"200 80 60 255"
+			"image_drawcolor"	"192 192 192 255" //"117 107 94 255"
+			"image_armedcolor"	"255 255 255 255" //"200 80 60 255"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
 				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
 				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
+				"wide"			"16"
+				"tall"			"16"
 				"visible"		"1"
 				"enabled"		"1"
-				"image"			"close_button"
+				//"image"			"close_button"
+				"image"			"glyph_collapse"
 				"scaleImage"	"1"
+				"proportionaltoparent"	"1"
 			}				
 		}		
 	
@@ -730,31 +759,34 @@
 			"fieldName"		"Notifications_TitleLabel"
 			"font"			"HudFontSmallBold"
 			"labelText"		"%notititle%"
-			"textAlignment"	"center"
-			"xpos"			"16"
-			"ypos"			"16"
-			"wide"			"f32"
-			"tall"			"f32"
+			"textAlignment"	"east"
+			"xpos"			"rs1"
+			"ypos"			"0"
+			"zpos"			"50"
+			"wide"			"f0"
+			"tall"			"24"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"White" //"LabelDark"
-			//"wrap"			"1"
+			"fgcolor"		"TanLight"
+			"mouseinputenabled"		"0"
+			"textinsetx"			"16"
+			"textinsety"			"1"
 			"proportionaltoparent"	"1"
 		}
 		
-		// this doesn't do anything i think
 		"Notifications_Scroller"
 		{
 			"ControlName"	"ScrollableEditablePanel"
 			"fieldName"		"Notifications_Scroller"
-			"xpos"			"8"
-			"ypos"			"25"
-			"wide"			"210"
-			"tall"			"135"
+			"xpos"			"20"
+			"ypos"			"24"
+			"wide"			"f22"
+			"tall"			"90"
 			"PaintBackgroundType"	"2"
 			"fgcolor_override"	"117 107 94 255"
+			"proportionaltoparent"	"1"
 			
 			"Notifications_Control"
 			{
@@ -763,7 +795,7 @@
 				"xpos"			"0"
 				"ypos"			"0"
 				"wide"			"220"
-				"tall"			"135"
+				"tall"			"40"
 				"visible"		"1"
 			}
 		}

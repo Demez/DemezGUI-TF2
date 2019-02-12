@@ -1,0 +1,1 @@
+#base "..\..\demez\ui\econ\notification\genericnotificationtoastmainmenu.res"

@@ -95,7 +95,11 @@ _minmode, _lodef, _hidef
 "MeterFG"		"White"
 "MeterBG"		"Gray"
 "textAlignment_minmode"			"west"
-
+"eatmouseinput"	"0"	
+"button_activation_type"	"1"
+"stay_armed_on_click"	"1"
+"smallcheckimage"	"1"
+"skip_autoresize"	"1"
 
 
 
