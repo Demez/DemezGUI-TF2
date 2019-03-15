@@ -1965,6 +1965,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"480 599"
 				"dropshadow"	"0"
+				"antialias" "1"
 			}
 			"2"
 			{
@@ -1973,6 +1974,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"600 767"
 				"dropshadow"	"0"
+				"antialias" "1"
 			}
 			"3"
 			{
@@ -1981,6 +1983,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"768 1023"
 				"dropshadow"	"0"
+				"antialias" "1"
 			}
 			"4"
 			{
@@ -1989,6 +1992,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"1024 1199"
 				"dropshadow"	"0"
+				"antialias" "1"
 			}
 			"5"
 			{
@@ -1997,49 +2001,65 @@ Scheme
 				"weight"	"700"
 				"yres"		"1200 10000"
 				"dropshadow"	"0"
+				"antialias" "1"
 			}
 		}
 		"ChatFont"
 		{
 			"1"
 			{
-				"name"		"TF2"
-				"tall"		"12"
+				//"name"		"Verdana"
+				"name"		"TF2 Secondary"
+				"tall"		"12"	[$WIN32]
+				"tall"		"15"	[$X360]
 				"weight"	"700"
 				"yres"		"480 599"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"13"
+				//"name"		"Verdana"
+				"name"		"TF2 Secondary"
+				"tall"		"14"	[$WIN32]
+				"tall"		"17"	[$X360]
 				"weight"	"700"
 				"yres"		"600 767"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
+				//"name"		"Verdana"
+				"name"		"TF2 Secondary"
+				"tall"		"15"	[$WIN32]
+				"tall"		"18"	[$X360]
 				"weight"	"700"
 				"yres"		"768 1023"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
-				"tall"		"20"
+				//"name"		"Verdana"
+				"name"		"TF2 Secondary"
+				"tall"		"17"	[$WIN32]
+				"tall"		"20"	[$X360]
 				"weight"	"700"
 				"yres"		"1024 1199"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"5"
 			{
-				"name"		"Verdana"
-				"tall"		"24"
+				//"name"		"Verdana"
+				"name"		"TF2 Secondary"
+				"tall"		"22"	[$WIN32]
+				"tall"		"25"	[$X360]
 				"weight"	"700"
 				"yres"		"1200 10000"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 		}
 		"ChatMiniFont"
@@ -2051,6 +2071,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"480 599"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"2"
 			{
@@ -2059,6 +2080,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"600 767"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"3"
 			{
@@ -2067,6 +2089,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"768 1023"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"4"
 			{
@@ -2075,6 +2098,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"1024 1199"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 			"5"
 			{
@@ -2083,6 +2107,7 @@ Scheme
 				"weight"	"700"
 				"yres"		"1200 10000"
 				"dropshadow"	"1"
+				"antialias" "1"
 			}
 		}
 

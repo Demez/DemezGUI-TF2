@@ -35,6 +35,7 @@ _minmode, _lodef, _hidef
 "textinsety"				"y units"					How many units far the text will be from the side along the Y axis
 
 "wrap"						(boolean)					Whether to have the text wrap when it hits the side. NOTE: when this is on, text alignment doesnt work
+"centerwrap"				boolean						l4d2 game ui only?
 
 // this looks like ass
 "tooltiptext"				(text)						When you hover your mouse over something with this keyvalue, this shows up. NOT the one TF2 uses though (i think)
