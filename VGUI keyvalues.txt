@@ -1,7 +1,7 @@
 NOTE: move this stuff into a wiki on github, and maybe put it into the valve dev wiki as well
 
 Shared keyvalues for controls
-=================================
+==================================================================
 "ControlName"				The Type of Control this is
 "fieldName"					What is shown in VGUI Draw Tree?
 
@@ -35,7 +35,7 @@ _minmode, _lodef, _hidef
 "textinsety"				"y units"					How many units far the text will be from the side along the Y axis
 
 "wrap"						(boolean)					Whether to have the text wrap when it hits the side. NOTE: when this is on, text alignment doesnt work
-"centerwrap"				boolean						l4d2 game ui only?
+"centerwrap"				boolean						l4d2 gameui only?
 
 // this looks like ass
 "tooltiptext"				(text)						When you hover your mouse over something with this keyvalue, this shows up. NOT the one TF2 uses though (i think)
@@ -51,18 +51,41 @@ _minmode, _lodef, _hidef
 "mouseinputenabled"			(boolean)					Whether to take control of the mouse when hovered over, or to ignore it, useful when this is an overlay
 "keyboardinputenabled"?		(boolean)					Whether to take control of the keyboard or to ignore it
 
-"button_activation_type"	"0" // when 1, it activates on pressed, otherwise you need to release it
-"stay_armed_on_click"	"1"
+// ----------------------------------------------------------------------------
+// Pinning, one of the most useful things and now i wish i knew about it when i started making this hud
+// any xpos or ypos value will be offset from the corner you pin to
+
+// Pin codes
+PIN_TOPLEFT
+PIN_TOPRIGHT
+PIN_BOTTOMLEFT
+PIN_BOTTOMRIGHT
+PIN_CENTER_TOP
+PIN_CENTER_RIGHT
+PIN_CENTER_BOTTOM
+PIN_CENTER_LEFT
+
+// commands
+"pin_to_sibling" 		"Element fieldName"
+
+// choose the corner of the current element you want to pin
+"pin_corner_to_sibling" "PIN_TOPLEFT"	
+
+// and then pin that corner to this corner of the selected element
+"pin_to_sibling_corner" "PIN_TOPLEFT"
+
+// idk what this does just yet
+"pinCorner"		"3"
 
 // Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead
----------------------------------------------
+-------------------------------------------------------------------------------
 "bgcolor_override"	
 "fgcolor_override"			This Generally controls the color of any text value
 
 "image_drawcolor"	"117 107 94 255"
 
 "noitem_textcolor"			idk what this is "117 107 94 255"
----------------------------------------------
+-------------------------------------------------------------------------------
 
 "PaintBackgroundType"		(1, 2) 			idk what this does yet 
 "paintbackground"			(boolean) 		Whether to draw the background or not
@@ -71,19 +94,16 @@ _minmode, _lodef, _hidef
 
 "auto_wide_tocontents"		(boolean)					Whether the control size will auto adjust to the size of the content inside
 
-// not entirely sure what these do, maybe for not using the mouse to navigate?
+// navigation on keyboard (or controller?)
 "navUp"				Name of any Control Above
 "navDown"			Name of any Control Below
 "navLeft"			Name of any Control to the Left
 "navRight"			Name of any Control to the Right
 "navToRelay"		Name of any Control idk
 
+-------------------------------------------------------------------------------
 // idk yet
 "autoResize"	"0"
-"pinCorner"		"3"
-"pin_to_sibling" 	"TargetNameLabel"
-"pin_corner_to_sibling" "PIN_TOPLEFT"
-"pin_to_sibling_corner" "PIN_TOPLEFT"
 "tabPosition"	"0"
 "use_proportional_insets" "1"
 "dulltext"		"0"
@@ -97,23 +117,41 @@ _minmode, _lodef, _hidef
 "MeterBG"		"Gray"
 "textAlignment_minmode"			"west"
 "eatmouseinput"	"0"	
-"button_activation_type"	"1"
-"stay_armed_on_click"	"1"
 "smallcheckimage"	"1"
 "skip_autoresize"	"1"
 
+// EditablePanel -----------------------------------
+"infocus_bgcolor_override"		"Background"
+"outoffocus_bgcolor_override"	"Background"
 
+"title"			"#CharInfoAndSetup"
+"title_font"	"HudFontMediumSmallBold"
+"titletextinsetX"	"40"
+"titletextinsetY"	"0"
+"titlebarfgcolor_override"				"200 187 161 100" // 255
+"titlebardisabledfgcolor_override"		"200 187 161 255"
+"titlebarbgcolor_override"				"46 43 42 255"
 
+"clientinsetx_override"			"0"
+"sheetinset_bottom"				"40"
 
-===========================================
+======================================================================================
 Button keyvalues
-===========================================
+======================================================================================
 "command"		you can use "engine" in this keyvalue to enter a command in the console, only works on the menu screen though
 
+"stay_armed_on_click"	"1"		Button will remain armed after you click it (it will keep that highlight on hover after clicking it)
 
-// Colors, all use "R G B Alpha", though alpha doesnt seem to work on images, use the "alpha" keyvalue instead
+// 0 - allows you to hold the button down and have a depressed color show
+// 			BUG: if you hold down, move the mouse off of it and let go and you have "stay_armed_on_click" enabled
+//			it will stay armed even though you're cursor isn't on it
+// 1 - click it to preform action, no holding down button
+// 2 - default? same as 0, but no depressed color change
+"button_activation_type"	"0"
+
+// Colors, all use "R G B Alpha", alpha doesnt work on images, use the "alpha" keyvalue instead
 // also bg/fgcolor_override does not work here
----------------------------------------------
+-------------------------------------------------------------------------------
 "defaultBgcolor_override"
 "armedBgcolor_override"
 "depressedBgcolor_override"
@@ -122,8 +160,8 @@ Button keyvalues
 "armedFgcolor_override"
 "depressedFgcolor_override"
 
-"image_armedcolor"			"235 226 202 255"
----------------------------------------------
+"image_armedcolor"
+-------------------------------------------------------------------------------
 
 "sound_depressed"			"UI/buttonclick.wav"				Sound played when button is armed (like mouse over)
 "sound_released"			"UI/buttonclickrelease.wav"			Sound played when button is pressed
@@ -132,15 +170,15 @@ Button keyvalues
 "border_default"	"MainMenuButtonDefault"
 "border_armed"		"MainMenuButtonArmed"
 
-===========================================
+======================================================================================
 Image keyvalues
-===========================================		
+======================================================================================		
 "image"					(image directory)					Directory to image relative to vgui folder
 "scaleImage"			(boolean)							Whether to resize/scale the image to fit the entire panel, or leave unchanged in size
 
-===========================================
+======================================================================================
 Fonts Only
-===========================================
+======================================================================================
 "FontName"
 {
 	"1"
@@ -154,7 +192,7 @@ Fonts Only
 		"antialias" 		"1"
 		"yres"				"480 599"
 		"underline"			"1"
-		"outline"			"1"				Dont use this, looks like ass because its not affected by antialias
+		"outline"			"1"				Dont use this, looks like ass because its not affected by antialias (antialias on this is broken in tf2)
 		"dropshadow"		"1"
 		"blur"        		"1"
 		
@@ -166,20 +204,18 @@ Fonts Only
 	}
 }
 
-
-
-===========================================
+======================================================================================
 CItemModelPanel keyvalues
-===========================================		
+======================================================================================		
 "text_ypos"			"20"
 "text_center"		"1"
 "model_hide"		"1"
 "resize_to_text"	"1"
 "padding_height"	"15"
 
-===========================================
+======================================================================================
 CEmbeddedItemModelPanel keyvalues
-===========================================		
+======================================================================================		
 "useparentbg"		"1"
 	
 		"inset_eq_x"	"2"
